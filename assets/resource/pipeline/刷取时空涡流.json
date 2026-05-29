@@ -1,0 +1,433 @@
+{
+    "$__mpe_config_刷取时空涡流": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "savedViewport": {
+                "x": -5469,
+                "y": 267,
+                "zoom": 0.65
+            },
+            "filename": "刷取时空涡流",
+            "version": "v1.5.3"
+        }
+    },
+    "刷取时空涡流开始": {
+        "next": [
+            "进入刷体力界面-刷取时空涡流"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4247,
+                "y": 11
+            }
+        }
+    },
+    "进入刷体力界面-刷取时空涡流": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1097,
+                    580,
+                    183,
+                    133
+                ],
+                "template": [
+                    "刷体力标志.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
+        "next": [
+            "开始进入时空涡流界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4684,
+                "y": -116
+            }
+        }
+    },
+    "开始进入时空涡流界面": {
+        "timeout": 6000,
+        "next": [
+            "进入时空涡流界面"
+        ],
+        "on_error": [
+            "按Esc返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5087,
+                "y": 31
+            }
+        }
+    },
+    "进入时空涡流界面": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    725,
+                    70,
+                    257,
+                    71
+                ],
+                "expected": [
+                    "今日未"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "rate_limit": 500,
+        "next": [
+            "开始确认前往时空涡流界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5467,
+                "y": -134
+            }
+        }
+    },
+    "$__mpe_external_按Esc返回主界面开始_刷取时空涡流": {
+        "$__mpe_code": {
+            "position": {
+                "x": 9889,
+                "y": 737
+            }
+        }
+    },
+    "涡流奖励已领取开始挑战": {
+        "next": [
+            "点击挑战界面-涡流"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7522,
+                "y": 46
+            }
+        }
+    },
+    "点击挑战界面-涡流": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    730,
+                    641,
+                    162,
+                    42
+                ],
+                "expected": [
+                    "挑战"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 15000,
+        "next": [
+            "开始确认今日Buff"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7755,
+                "y": -164
+            }
+        }
+    },
+    "确认今日Buff": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    572,
+                    478,
+                    154,
+                    65
+                ],
+                "expected": [
+                    "点击"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "确认涡流挑战"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 8361,
+                "y": -244
+            }
+        }
+    },
+    "确认涡流挑战": {
+        "next": [
+            "涡流挑战开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 8649,
+                "y": -12
+            }
+        }
+    },
+    "涡流挑战开始": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1120,
+                    651,
+                    136,
+                    66
+                ],
+                "expected": [
+                    "挑战"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "有没有提示什么的-涡流"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 8970,
+                "y": -46
+            }
+        }
+    },
+    "有没有提示什么的-涡流": {
+        "timeout": 5000,
+        "next": [
+            "有没有提示什么的"
+        ],
+        "on_error": [
+            "开始等待100s"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 9350,
+                "y": -160
+            }
+        }
+    },
+    "开始确认今日Buff": {
+        "timeout": 4000,
+        "next": [
+            "确认今日Buff"
+        ],
+        "on_error": [
+            "确认涡流挑战"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 8033,
+                "y": -164
+            }
+        }
+    },
+    "有没有提示什么的": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    402,
+                    500,
+                    167,
+                    50
+                ],
+                "expected": [
+                    "继续"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "开始等待100s"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 9674,
+                "y": -306
+            }
+        }
+    },
+    "开始等待100s": {
+        "post_delay": 100000,
+        "next": [
+            "开始涡流奖励确认"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 9993,
+                "y": 53
+            }
+        }
+    },
+    "开始涡流奖励确认": {
+        "next": [
+            "涡流奖励确认"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 10307,
+                "y": 10
+            }
+        }
+    },
+    "涡流奖励确认": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1062,
+                    638,
+                    154,
+                    52
+                ],
+                "expected": [
+                    "返回"
+                ]
+            }
+        },
+        "post_delay": 10000,
+        "next": [
+            "按Esc返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 10619,
+                "y": -138
+            }
+        }
+    },
+    "开始确认前往时空涡流界面": {
+        "next": [
+            "确认前往时空涡流界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5827,
+                "y": -65
+            }
+        }
+    },
+    "确认前往时空涡流界面": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1041,
+                    295,
+                    180,
+                    136
+                ],
+                "template": [
+                    "时空涡流确认标志.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 15000,
+        "next": [
+            "进入的是时空涡流吗"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6194,
+                "y": -268
+            }
+        }
+    },
+    "进入的是时空涡流吗": {
+        "timeout": 4000,
+        "next": [
+            "确认时空涡流奖励"
+        ],
+        "on_error": [
+            "涡流奖励已领取开始挑战"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6524,
+                "y": -29
+            }
+        }
+    },
+    "确认时空涡流奖励": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    512,
+                    631,
+                    265,
+                    65
+                ],
+                "expected": [
+                    "领取"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 4000,
+        "next": [
+            "确认涡流奖励"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6875,
+                "y": -296
+            }
+        }
+    },
+    "确认涡流奖励": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    541,
+                    154,
+                    215,
+                    78
+                ],
+                "expected": [
+                    "获得"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "涡流奖励已领取开始挑战"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7195,
+                "y": -166
+            }
+        }
+    }
+}

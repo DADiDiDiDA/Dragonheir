@@ -1,0 +1,187 @@
+{
+    "$__mpe_config_领取邮箱奖励": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1780025878967,
+            "isModifiedExternally": false,
+            "filePath": "D:\\Application\\Automate\\Dragonheir\\assets\\resource\\pipeline\\领取邮箱奖励.json",
+            "savedViewport": {
+                "x": -984,
+                "y": 26,
+                "zoom": 0.38
+            },
+            "filename": "领取邮箱奖励",
+            "version": "v1.5.3"
+        }
+    },
+    "一键领取邮箱奖励": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    227,
+                    633,
+                    133,
+                    44
+                ],
+                "expected": [
+                    "一键领取"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "确认邮箱奖励"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4499,
+                "y": 280
+            }
+        }
+    },
+    "开始一键领取邮箱奖励": {
+        "timeout": 3000,
+        "next": [
+            "一键领取邮箱奖励"
+        ],
+        "on_error": [
+            "无待领取奖励-邮箱"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4122,
+                "y": 415
+            }
+        }
+    },
+    "开始返回主界面-邮箱": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1195,
+                    3,
+                    83,
+                    62
+                ],
+                "template": [
+                    "叉号.png"
+                ],
+                "green_mask": true,
+                "threshold": [
+                    0.5
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "无待领取奖励-邮箱"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5463,
+                "y": 478
+            }
+        }
+    },
+    "无待领取奖励-邮箱": {
+        "$__mpe_code": {
+            "position": {
+                "x": 6001,
+                "y": 1179
+            }
+        }
+    },
+    "点击邮箱": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    173,
+                    4,
+                    81,
+                    68
+                ],
+                "template": [
+                    "待领取奖励.png"
+                ],
+                "green_mask": true,
+                "threshold": [
+                    0.55
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "开始一键领取邮箱奖励"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3702,
+                "y": 239
+            }
+        }
+    },
+    "确认邮箱奖励": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    572,
+                    235,
+                    147,
+                    74
+                ],
+                "expected": [
+                    "获得"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "返回主界面-邮箱"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4847,
+                "y": 366
+            }
+        }
+    },
+    "返回主界面-邮箱": {
+        "next": [
+            "开始返回主界面-邮箱"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5147,
+                "y": 403
+            }
+        }
+    },
+    "领取邮箱奖励开始": {
+        "timeout": 4000,
+        "next": [
+            "点击邮箱"
+        ],
+        "on_error": [
+            "无待领取奖励-邮箱"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3219,
+                "y": 410
+            }
+        }
+    }
+}

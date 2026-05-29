@@ -1,0 +1,129 @@
+{
+    "$__mpe_config_召唤界面买一个骰子": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "savedViewport": {
+                "x": -1602,
+                "y": 169,
+                "zoom": 0.48
+            },
+            "filename": "召唤界面买一个骰子",
+            "version": "v1.5.3"
+        }
+    },
+    "召唤界面买一个骰子开始": {
+        "next": [
+            "进入召唤界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4050,
+                "y": 98
+            }
+        }
+    },
+    "进入召唤界面": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    680,
+                    4,
+                    593,
+                    71
+                ],
+                "template": [
+                    "召唤图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "点击骰子购买"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4400,
+                "y": 92
+            }
+        }
+    },
+    "点击骰子购买": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    465,
+                    5,
+                    734,
+                    60
+                ],
+                "template": [
+                    "骰子图标.png"
+                ],
+                "threshold": [
+                    0.9
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    131,
+                    0,
+                    0,
+                    0
+                ]
+            }
+        },
+        "next": [
+            "确认骰子购买"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4745,
+                "y": 71
+            }
+        }
+    },
+    "确认骰子购买": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    617,
+                    521,
+                    128,
+                    40
+                ],
+                "expected": [
+                    "购买"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "按Esc返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5046,
+                "y": 128
+            }
+        }
+    },
+    "$__mpe_external_按Esc返回主界面开始_召唤界面买一个骰子": {
+        "$__mpe_code": {
+            "position": {
+                "x": 5434,
+                "y": 159
+            }
+        }
+    }
+}

@@ -1,0 +1,91 @@
+{
+    "$__mpe_config_每日首次进入奖励领取": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "savedViewport": {
+                "x": -5949,
+                "y": -301,
+                "zoom": 0.86
+            },
+            "filename": "每日首次进入奖励领取",
+            "version": "v1.5.3"
+        }
+    },
+    "每日首次进入奖励领取开始": {
+        "timeout": 4000,
+        "next": [
+            "检查主界面特征"
+        ],
+        "on_error": [
+            "领取每日异界之门奖励"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7122,
+                "y": 682
+            }
+        }
+    },
+    "检查主界面特征": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1118,
+                    570,
+                    162,
+                    146
+                ],
+                "template": [
+                    "刷体力标志.png"
+                ]
+            }
+        },
+        "next": [
+            "在主界面了任务结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7528,
+                "y": 434
+            }
+        }
+    },
+    "在主界面了任务结束": {
+        "$__mpe_code": {
+            "position": {
+                "x": 7878,
+                "y": 517
+            }
+        }
+    },
+    "领取每日异界之门奖励": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    575,
+                    605,
+                    134,
+                    113
+                ],
+                "expected": [
+                    "点击"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "每日首次进入奖励领取开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7510,
+                "y": 833
+            }
+        }
+    }
+}

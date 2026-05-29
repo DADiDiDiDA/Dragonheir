@@ -1,0 +1,798 @@
+{
+    "$__mpe_config_刷体力开始": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1780025865372,
+            "isModifiedExternally": false,
+            "filePath": "D:\\Application\\Automate\\Dragonheir\\assets\\resource\\pipeline\\刷体力开始.json",
+            "savedViewport": {
+                "x": -5698,
+                "y": -223,
+                "zoom": 0.75
+            },
+            "filename": "刷体力开始",
+            "version": "v1.5.3"
+        }
+    },
+    "一键扫荡": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1041,
+                    605,
+                    202,
+                    91
+                ],
+                "expected": [
+                    "扫荡"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
+        "next": [
+            "开始调整扫荡次数"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7734,
+                "y": 611
+            }
+        }
+    },
+    "开始一键扫荡": {
+        "next": [
+            "一键扫荡"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7252,
+                "y": 697
+            }
+        }
+    },
+    "开始调整扫荡次数": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1041,
+                    439,
+                    81,
+                    89
+                ],
+                "template": [
+                    "扫荡加号.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "repeat": 11,
+        "repeat_delay": 800,
+        "post_delay": 3000,
+        "next": [
+            "确认扫荡正式开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 8185,
+                "y": 593
+            }
+        }
+    },
+    "开始进入养成界面-电毒天赋": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    195,
+                    644,
+                    934,
+                    61
+                ],
+                "expected": [
+                    "养成"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 4000,
+        "next": [
+            "选择电毒天赋关卡"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5913,
+                "y": 633
+            }
+        }
+    },
+    "开始进入养成界面_光黯天赋": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    195,
+                    644,
+                    934,
+                    61
+                ],
+                "expected": [
+                    "养成"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 4000,
+        "next": [
+            "选择光黯天赋关卡"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5922,
+                "y": 297
+            }
+        }
+    },
+    "开始进入养成界面_经验关卡": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    195,
+                    644,
+                    934,
+                    61
+                ],
+                "expected": [
+                    "养成"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 4000,
+        "next": [
+            "选择经验关卡"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5941,
+                "y": -3
+            }
+        }
+    },
+    "开始进入养成界面_霜火天赋": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    195,
+                    644,
+                    934,
+                    61
+                ],
+                "expected": [
+                    "养成"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 4000,
+        "next": [
+            "选择霜火天赋关卡"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5897,
+                "y": 919
+            }
+        }
+    },
+    "开始进入装备界面-剧毒墓穴": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    195,
+                    644,
+                    934,
+                    61
+                ],
+                "expected": [
+                    "装备"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 4000,
+        "next": [
+            "选择剧毒墓穴关卡"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5865,
+                "y": 1230
+            }
+        }
+    },
+    "开始进入装备界面-诅咒巢穴": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    195,
+                    644,
+                    934,
+                    61
+                ],
+                "expected": [
+                    "装备"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 4000,
+        "next": [
+            "选择诅咒巢穴关卡"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5843,
+                "y": 1535
+            }
+        }
+    },
+    "开始进入装备界面_古战场遗迹": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    195,
+                    644,
+                    934,
+                    61
+                ],
+                "expected": [
+                    "装备"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 4000,
+        "next": [
+            "选择古战场遗迹关卡"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5803,
+                "y": 2305
+            }
+        }
+    },
+    "开始进入装备界面_异教遗迹": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    195,
+                    644,
+                    934,
+                    61
+                ],
+                "expected": [
+                    "装备"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 4000,
+        "next": [
+            "选择异教遗迹关卡"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5808,
+                "y": 2071
+            }
+        }
+    },
+    "开始进入装备界面_腐烂墓穴": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    195,
+                    644,
+                    934,
+                    61
+                ],
+                "expected": [
+                    "装备"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 4000,
+        "next": [
+            "选择腐烂墓穴关卡"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5833,
+                "y": 1807
+            }
+        }
+    },
+    "开始选择打什么关卡": {
+        "next": [
+            "选择经验关卡开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4908,
+                "y": 230
+            }
+        }
+    },
+    "确认扫荡正式开始": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    879,
+                    554,
+                    157,
+                    42
+                ],
+                "expected": [
+                    "挑战"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
+        "next": [
+            "按Esc返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 8567,
+                "y": 681
+            }
+        }
+    },
+    "进入关卡初次选择": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1115,
+                    559,
+                    157,
+                    150
+                ],
+                "template": [
+                    "刷体力标志.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 4000,
+        "next": [
+            "开始选择打什么关卡"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4253,
+                "y": 239
+            }
+        }
+    },
+    "进入冒险界面": {
+        "next": [
+            "进入关卡初次选择"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3877,
+                "y": 260
+            }
+        }
+    },
+    "选择光黯天赋关卡": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    141,
+                    392,
+                    1019,
+                    138
+                ],
+                "expected": [
+                    "光黯"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
+        "next": [
+            "开始一键扫荡"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6266,
+                "y": 350
+            }
+        }
+    },
+    "选择光黯天赋关卡开始": {
+        "next": [
+            "开始进入养成界面_光黯天赋"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5562,
+                "y": 343
+            }
+        }
+    },
+    "选择剧毒墓穴关卡": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    41,
+                    398,
+                    1226,
+                    118
+                ],
+                "expected": [
+                    "剧毒"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
+        "next": [
+            "开始一键扫荡"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6183,
+                "y": 1279
+            }
+        }
+    },
+    "选择剧毒墓穴关卡开始": {
+        "next": [
+            "开始进入装备界面-剧毒墓穴"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5523,
+                "y": 1202
+            }
+        }
+    },
+    "选择古战场遗迹关卡": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    41,
+                    398,
+                    1226,
+                    118
+                ],
+                "expected": [
+                    "古战场"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
+        "next": [
+            "开始一键扫荡"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6121,
+                "y": 2355
+            }
+        }
+    },
+    "选择古战场遗迹关卡开始_": {
+        "next": [
+            "开始进入装备界面_古战场遗迹"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5461,
+                "y": 2277
+            }
+        }
+    },
+    "选择异教遗迹关卡": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    41,
+                    398,
+                    1226,
+                    118
+                ],
+                "expected": [
+                    "异教"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
+        "next": [
+            "开始一键扫荡"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6126,
+                "y": 2121
+            }
+        }
+    },
+    "选择异教遗迹关卡开始": {
+        "next": [
+            "开始进入装备界面_异教遗迹"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5466,
+                "y": 2043
+            }
+        }
+    },
+    "选择电毒天赋关卡": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    141,
+                    392,
+                    1019,
+                    138
+                ],
+                "expected": [
+                    "电毒"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
+        "next": [
+            "开始一键扫荡"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6285,
+                "y": 670
+            }
+        }
+    },
+    "选择电毒天赋关卡开始": {
+        "next": [
+            "开始进入养成界面-电毒天赋"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5545,
+                "y": 634
+            }
+        }
+    },
+    "选择经验关卡": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    141,
+                    392,
+                    1019,
+                    138
+                ],
+                "expected": [
+                    "经验"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
+        "next": [
+            "开始一键扫荡"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6298,
+                "y": 50
+            }
+        }
+    },
+    "选择经验关卡开始": {
+        "next": [
+            "开始进入养成界面_经验关卡"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5575,
+                "y": 51
+            }
+        }
+    },
+    "选择腐烂墓穴关卡": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    41,
+                    398,
+                    1226,
+                    118
+                ],
+                "expected": [
+                    "腐烂"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
+        "next": [
+            "开始一键扫荡"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6151,
+                "y": 1856
+            }
+        }
+    },
+    "选择腐烂墓穴关卡开始": {
+        "next": [
+            "开始进入装备界面_腐烂墓穴"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5491,
+                "y": 1779
+            }
+        }
+    },
+    "选择诅咒巢穴关卡": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    41,
+                    398,
+                    1226,
+                    118
+                ],
+                "expected": [
+                    "诅咒"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
+        "next": [
+            "开始一键扫荡"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6162,
+                "y": 1585
+            }
+        }
+    },
+    "选择诅咒巢穴关卡开始": {
+        "next": [
+            "开始进入装备界面-诅咒巢穴"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5501,
+                "y": 1507
+            }
+        }
+    },
+    "选择霜火天赋关卡": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    141,
+                    392,
+                    1019,
+                    138
+                ],
+                "expected": [
+                    "霜火"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
+        "next": [
+            "开始一键扫荡"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6233,
+                "y": 972
+            }
+        }
+    },
+    "选择霜火天赋关卡开始": {
+        "next": [
+            "开始进入养成界面_霜火天赋"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5546,
+                "y": 900
+            }
+        }
+    },
+    "$__mpe_external_按Esc返回主界面开始_刷体力开始": {
+        "$__mpe_code": {
+            "position": {
+                "x": 9022,
+                "y": 910
+            }
+        }
+    }
+}

@@ -1,0 +1,136 @@
+{
+    "$__mpe_config_收取海岛矿场资源": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "savedViewport": {
+                "x": -1824,
+                "y": 174,
+                "zoom": 0.66
+            },
+            "filename": "收取海岛矿场资源",
+            "version": "v1.5.3"
+        }
+    },
+    "无海岛界面-已位于海岛矿场": {
+        "next": [
+            "开始进入矿场"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2758,
+                "y": 266
+            }
+        }
+    },
+    "$__mpe_external_按Esc返回主界面开始_收取海岛矿场资源": {
+        "$__mpe_code": {
+            "position": {
+                "x": 4098,
+                "y": 118
+            }
+        }
+    },
+    "收取海岛资源开始-矿场": {
+        "timeout": 3000,
+        "next": [
+            "进入海岛界面-矿场"
+        ],
+        "on_error": [
+            "无海岛界面-已位于海岛矿场"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2376,
+                "y": 99
+            }
+        }
+    },
+    "进入海岛界面-矿场": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    775,
+                    641,
+                    489,
+                    57
+                ],
+                "expected": [
+                    "海岛"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 5000,
+        "next": [
+            "开始进入矿场"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2743,
+                "y": -130
+            }
+        }
+    },
+    "开始进入矿场": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    170,
+                    327,
+                    164,
+                    109
+                ],
+                "expected": [
+                    "矿场"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
+        "next": [
+            "开始领取矿场奖励"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3176,
+                "y": -10
+            }
+        }
+    },
+    "开始领取矿场奖励": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    819,
+                    630,
+                    327,
+                    66
+                ],
+                "expected": [
+                    "领取"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
+        "next": [
+            "按Esc返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3635,
+                "y": 90
+            }
+        }
+    }
+}

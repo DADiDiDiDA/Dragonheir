@@ -1,0 +1,43 @@
+{
+    "$__mpe_config_启动龙息游戏": {
+        "$__mpe_code": {
+            "prefix": "",
+            "filePath": "D:\\Application\\Automate\\Dragonheir\\assets\\启动龙息游戏.json",
+            "lastSyncTime": 1779978592218,
+            "isDeleted": true,
+            "coordinateMode": "absolute-v1",
+            "savedViewport": {
+                "x": -1654,
+                "y": -325,
+                "zoom": 1.13
+            },
+            "filename": "启动龙息游戏",
+            "version": "v1.5.3"
+        }
+    },
+    "启动龙息游戏开始": {
+        "next": [
+            "启动龙息游戏"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1708,
+                "y": 465
+            }
+        }
+    },
+    "启动龙息游戏": {
+        "action": {
+            "type": "StartApp",
+            "param": {
+                "package": "com.tencent.dragoncn "
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1997,
+                "y": 443
+            }
+        }
+    }
+}

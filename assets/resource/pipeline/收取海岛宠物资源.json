@@ -1,0 +1,195 @@
+{
+    "$__mpe_config_收取海岛宠物资源": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "savedViewport": {
+                "x": -2116,
+                "y": 179,
+                "zoom": 0.69
+            },
+            "filename": "收取海岛宠物资源",
+            "version": "v1.5.3"
+        }
+    },
+    "收取海岛资源开始-宠物": {
+        "timeout": 3000,
+        "next": [
+            "进入海岛界面-宠物"
+        ],
+        "on_error": [
+            "无海岛界面-已位于海岛宠物"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2476,
+                "y": 149
+            }
+        }
+    },
+    "进入海岛界面-宠物": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    775,
+                    641,
+                    489,
+                    57
+                ],
+                "expected": [
+                    "海岛"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 5000,
+        "next": [
+            "开始进入宠物"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2843,
+                "y": -80
+            }
+        }
+    },
+    "开始进入宠物": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    258,
+                    495,
+                    81,
+                    78
+                ],
+                "expected": [
+                    "孵化"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
+        "next": [
+            "开始领取宠物奖励"
+        ],
+        "on_error": [
+            "按Esc返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3276,
+                "y": 40
+            }
+        }
+    },
+    "开始领取宠物奖励": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    819,
+                    630,
+                    327,
+                    66
+                ],
+                "expected": [
+                    "收取"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
+        "next": [
+            "确认魔宠奖励"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3693,
+                "y": -174
+            }
+        }
+    },
+    "无海岛界面-已位于海岛宠物": {
+        "next": [
+            "开始进入宠物"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2858,
+                "y": 316
+            }
+        }
+    },
+    "确认魔宠奖励": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    554,
+                    641,
+                    168,
+                    47
+                ],
+                "expected": [
+                    "确认"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "开始孵化新的魔宠"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4022,
+                "y": -198
+            }
+        }
+    },
+    "开始孵化新的魔宠": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    913,
+                    652,
+                    168,
+                    44
+                ],
+                "expected": [
+                    "放入"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "按Esc返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4283,
+                "y": -204
+            }
+        }
+    },
+    "$__mpe_external_按Esc返回主界面开始_收取海岛宠物资源": {
+        "$__mpe_code": {
+            "position": {
+                "x": 4571,
+                "y": 44
+            }
+        }
+    }
+}

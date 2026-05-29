@@ -1,0 +1,232 @@
+{
+    "$__mpe_config_领取游踪奖励": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "savedViewport": {
+                "x": -6117,
+                "y": 5,
+                "zoom": 0.65
+            },
+            "filename": "领取游踪奖励",
+            "version": "v1.5.3"
+        }
+    },
+    "进入每日任务界面开始-游踪奖励": {
+        "timeout": 4000,
+        "next": [
+            "检查有无待领取奖励游踪奖励"
+        ],
+        "on_error": [
+            "按Esc返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 8572,
+                "y": 570
+            }
+        }
+    },
+    "选择任务界面-游踪奖励": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    690,
+                    17,
+                    589,
+                    65
+                ],
+                "template": [
+                    "任务图标.png"
+                ],
+                "green_mask": true,
+                "threshold": [
+                    0.6
+                ]
+            }
+        },
+        "next": [
+            "进入每日任务界面开始-游踪奖励"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 8279,
+                "y": 540
+            }
+        }
+    },
+    "领取任务奖励开始_游踪奖励": {
+        "next": [
+            "选择任务界面-游踪奖励"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7955,
+                "y": 637
+            }
+        }
+    },
+    "检查有无待领取奖励游踪奖励": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    33,
+                    366,
+                    92,
+                    118
+                ],
+                "template": [
+                    "待领取奖励.png"
+                ],
+                "threshold": [
+                    0.3
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "开始选择任务界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 8919,
+                "y": 266
+            }
+        }
+    },
+    "$__mpe_external_按Esc返回主界面开始_领取游踪奖励": {
+        "$__mpe_code": {
+            "position": {
+                "x": 10322,
+                "y": 710
+            }
+        }
+    },
+    "开始选择任务界面": {
+        "next": [
+            "选择任务界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 9179,
+                "y": 266
+            }
+        }
+    },
+    "选择任务界面": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1049,
+                    104,
+                    125,
+                    60
+                ],
+                "expected": [
+                    "任务"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "开始领取任务活跃奖励-游踪"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 9460,
+                "y": 182
+            }
+        }
+    },
+    "开始领取任务活跃奖励-游踪": {
+        "next": [
+            "领取任务活跃奖励-游踪"
+        ],
+        "on_error": [
+            "开始领取任务奖励-游踪"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 9731,
+                "y": 213
+            }
+        }
+    },
+    "领取任务活跃奖励-游踪": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1049,
+                    217,
+                    175,
+                    83
+                ],
+                "expected": [
+                    "领取"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "开始领取任务奖励-游踪"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 10103,
+                "y": 14
+            }
+        }
+    },
+    "开始领取任务奖励-游踪": {
+        "next": [
+            "领取任务奖励-游踪"
+        ],
+        "on_error": [
+            "按Esc返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 10384,
+                "y": 258
+            }
+        }
+    },
+    "领取任务奖励-游踪": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1052,
+                    628,
+                    181,
+                    60
+                ],
+                "expected": [
+                    "领取"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "按Esc返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 10691,
+                "y": 95
+            }
+        }
+    }
+}
