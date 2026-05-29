@@ -3,122 +3,49 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1780048003714,
+            "isModifiedExternally": false,
+            "filePath": "D:\\Application\\Automate\\Dragonheir\\assets\\resource\\pipeline\\收取海岛派遣资源.json",
             "savedViewport": {
-                "x": -1716,
-                "y": 94,
+                "x": -2090,
+                "y": 16,
                 "zoom": 0.57
             },
             "filename": "收取海岛派遣资源",
             "version": "v1.5.3"
         }
     },
-    "无海岛界面-已位于海岛派遣": {
-        "next": [
-            "开始进入派遣"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2758,
-                "y": 266
-            }
-        }
-    },
     "$__mpe_external_按Esc返回主界面开始_收取海岛派遣资源": {
         "$__mpe_code": {
             "position": {
-                "x": 4306,
-                "y": 214
+                "x": 5455,
+                "y": 301
             }
         }
     },
-    "开始新的派遣": {
+    "开始新的派遣-第一页": {
+        "timeout": 4000,
         "next": [
-            "新的派遣"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3656,
-                "y": 472
-            }
-        }
-    },
-    "新的派遣": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    1060,
-                    152,
-                    181,
-                    537
-                ],
-                "template": [
-                    "海岛派遣按钮.png"
-                ]
-            }
-        },
-        "next": [
-            "新的派遣结束"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3892,
-                "y": 136
-            }
-        }
-    },
-    "新的派遣结束": {
-        "next": [
-            "开始新的派遣"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 4180,
-                "y": 392
-            }
-        }
-    },
-    "收取海岛资源开始-派遣": {
-        "timeout": 3000,
-        "next": [
-            "进入海岛界面-派遣"
+            "新的派遣-第一页"
         ],
         "on_error": [
-            "无海岛界面-已位于海岛派遣"
+            "开始新的派遣-第二页"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2376,
-                "y": 99
+                "x": 3377,
+                "y": 448
             }
         }
     },
-    "进入海岛界面-派遣": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    775,
-                    641,
-                    489,
-                    57
-                ],
-                "expected": [
-                    "海岛"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 5000,
+    "开始新的派遣-第二页": {
         "next": [
-            "开始进入派遣"
+            "滑动屏幕-第二页派遣"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2743,
-                "y": -130
+                "x": 4187,
+                "y": 768
             }
         }
     },
@@ -142,44 +69,280 @@
         },
         "post_delay": 3000,
         "next": [
-            "开始领取派遣奖励"
-        ],
-        "on_error": [
-            "按Esc返回主界面开始"
+            "开始新的派遣-第一页"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3176,
-                "y": -10
+                "x": 3850,
+                "y": -67
             }
         }
     },
-    "开始领取派遣奖励": {
+    "收取海岛资源开始-派遣": {
+        "timeout": 3000,
+        "next": [
+            "进入海岛界面-派遣"
+        ],
+        "on_error": [
+            "无海岛界面-已位于海岛派遣"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2376,
+                "y": 99
+            }
+        }
+    },
+    "新的派遣-第一页": {
         "recognition": {
-            "type": "OCR",
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
-                    819,
-                    630,
-                    327,
-                    66
+                    1060,
+                    152,
+                    181,
+                    537
                 ],
-                "expected": [
-                    "领取"
+                "template": [
+                    "海岛派遣按钮.png"
                 ]
             }
         },
         "action": {
             "type": "Click"
         },
-        "post_delay": 3000,
+        "next": [
+            "新的派遣结束-第一页"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3784,
+                "y": 238
+            }
+        }
+    },
+    "新的派遣-第二页": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1060,
+                    152,
+                    181,
+                    537
+                ],
+                "template": [
+                    "海岛派遣按钮.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "新的派遣结束-第二页"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4963,
+                "y": 383
+            }
+        }
+    },
+    "新的派遣结束-第一页": {
+        "next": [
+            "开始新的派遣-第一页"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4357,
+                "y": 385
+            }
+        }
+    },
+    "新的派遣结束-第二页": {
         "next": [
             "按Esc返回主界面开始"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3720,
-                "y": -213
+                "x": 5211,
+                "y": 670
+            }
+        }
+    },
+    "无海岛界面-已位于海岛派遣": {
+        "next": [
+            "进入海岛界面结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2758,
+                "y": 266
+            }
+        }
+    },
+    "确认派遣奖励开始": {
+        "timeout": 6000,
+        "next": [
+            "确认派遣奖励"
+        ],
+        "on_error": [
+            "开始进入派遣"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3723,
+                "y": -365
+            }
+        }
+    },
+    "滑动屏幕-第二页派遣": {
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    1010,
+                    594,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        1010,
+                        295,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "timeout": 4000,
+        "next": [
+            "新的派遣-第二页"
+        ],
+        "on_error": [
+            "新的派遣结束-第二页"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4567,
+                "y": 548
+            }
+        }
+    },
+    "进入海岛界面-派遣": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    775,
+                    641,
+                    489,
+                    57
+                ],
+                "expected": [
+                    "海岛"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 5000,
+        "next": [
+            "进入海岛界面结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2743,
+                "y": -130
+            }
+        }
+    },
+    "领取旧的派遣奖励-派遣": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    981,
+                    321,
+                    100,
+                    81
+                ],
+                "template": [
+                    "派遣奖励标志.png"
+                ],
+                "threshold": [
+                    0.55
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "timeout": 4000,
+        "next": [
+            "确认派遣奖励开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3435,
+                "y": -243
+            }
+        }
+    },
+    "进入海岛界面结束": {
+        "timeout": 6000,
+        "next": [
+            "领取旧的派遣奖励-派遣"
+        ],
+        "on_error": [
+            "按Esc返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3099,
+                "y": 62
+            }
+        }
+    },
+    "确认派遣奖励": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    580,
+                    245,
+                    125,
+                    63
+                ],
+                "expected": [
+                    "获得"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "确认派遣奖励结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4031,
+                "y": -550
+            }
+        }
+    },
+    "确认派遣奖励结束": {
+        "next": [
+            "确认派遣奖励开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4287,
+                "y": -303
             }
         }
     }

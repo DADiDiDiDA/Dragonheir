@@ -4,9 +4,9 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": -1602,
-                "y": 169,
-                "zoom": 0.48
+                "x": -2554,
+                "y": 79,
+                "zoom": 0.66
             },
             "filename": "召唤界面买一个骰子",
             "version": "v1.5.3"
@@ -113,8 +113,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 5046,
-                "y": 128
+                "x": 5060,
+                "y": 8
             }
         }
     },

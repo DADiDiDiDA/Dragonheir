@@ -3,13 +3,10 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1780025865372,
-            "isModifiedExternally": false,
-            "filePath": "D:\\Application\\Automate\\Dragonheir\\assets\\resource\\pipeline\\刷体力开始.json",
             "savedViewport": {
-                "x": -5698,
-                "y": -223,
-                "zoom": 0.75
+                "x": -3154,
+                "y": 114,
+                "zoom": 0.66
             },
             "filename": "刷体力开始",
             "version": "v1.5.3"
@@ -411,8 +408,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 4253,
-                "y": 239
+                "x": 4448,
+                "y": 152
             }
         }
     },

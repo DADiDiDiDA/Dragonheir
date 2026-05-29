@@ -4,9 +4,9 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": -5047,
-                "y": -116,
-                "zoom": 0.65
+                "x": -5629,
+                "y": -260,
+                "zoom": 0.76
             },
             "filename": "开始工会签到",
             "version": "v1.5.3"
@@ -97,13 +97,17 @@
         }
     },
     "开始金币捐赠": {
+        "timeout": 4000,
         "next": [
             "金币捐赠"
         ],
+        "on_error": [
+            "按Esc返回主界面开始"
+        ],
         "$__mpe_code": {
             "position": {
-                "x": 8932,
-                "y": 322
+                "x": 8915,
+                "y": 323
             }
         }
     },
@@ -130,8 +134,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 9187,
-                "y": 300
+                "x": 9236,
+                "y": 225
             }
         }
     },

@@ -4,9 +4,9 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": -4886,
-                "y": -161,
-                "zoom": 0.65
+                "x": -6472,
+                "y": -157,
+                "zoom": 0.76
             },
             "filename": "领取任务奖励",
             "version": "v1.5.3"
@@ -14,7 +14,7 @@
     },
     "领取任务奖励开始": {
         "next": [
-            "选择任务界面"
+            "选择任务界面-任务奖励"
         ],
         "$__mpe_code": {
             "position": {
@@ -23,7 +23,7 @@
             }
         }
     },
-    "选择任务界面": {
+    "选择任务界面-任务奖励": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -41,6 +41,9 @@
                     0.6
                 ]
             }
+        },
+        "action": {
+            "type": "Click"
         },
         "next": [
             "进入每日任务界面开始"

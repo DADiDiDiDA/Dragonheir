@@ -3,13 +3,10 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1780025878967,
-            "isModifiedExternally": false,
-            "filePath": "D:\\Application\\Automate\\Dragonheir\\assets\\resource\\pipeline\\领取邮箱奖励.json",
             "savedViewport": {
-                "x": -984,
-                "y": 26,
-                "zoom": 0.38
+                "x": -2372,
+                "y": -82,
+                "zoom": 0.57
             },
             "filename": "领取邮箱奖励",
             "version": "v1.5.3"
@@ -85,8 +82,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 5463,
-                "y": 478
+                "x": 5564,
+                "y": 330
             }
         }
     },
@@ -103,13 +100,13 @@
             "type": "TemplateMatch",
             "param": {
                 "roi": [
-                    173,
+                    0,
                     4,
-                    81,
-                    68
+                    285,
+                    104
                 ],
                 "template": [
-                    "待领取奖励.png"
+                    "有可领取邮件图标.png"
                 ],
                 "green_mask": true,
                 "threshold": [

@@ -3,13 +3,10 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1780025908132,
-            "isModifiedExternally": false,
-            "filePath": "D:\\Application\\Automate\\Dragonheir\\assets\\resource\\pipeline\\进入游戏.json",
             "savedViewport": {
-                "x": -1129,
-                "y": 42,
-                "zoom": 0.57
+                "x": -1328,
+                "y": -140,
+                "zoom": 0.76
             },
             "filename": "进入游戏",
             "version": "v1.5.3"
@@ -34,12 +31,12 @@
             "type": "Click"
         },
         "next": [
-            "进入游戏开始"
+            "关闭网络错误后等待20s"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3052,
-                "y": 593
+                "x": 2627,
+                "y": 642
             }
         }
     },
@@ -49,8 +46,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2666,
-                "y": 639
+                "x": 2227,
+                "y": 597
             }
         }
     },
@@ -72,29 +69,26 @@
         "action": {
             "type": "Click"
         },
-        "post_delay": 40000,
+        "post_delay": 30000,
         "next": [
             "进入游戏结束"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2994,
-                "y": 330
+                "x": 2886,
+                "y": 243
             }
         }
     },
     "进入游戏开始": {
-        "post_delay": 45000,
+        "timeout": 4000,
         "next": [
-            "进入游戏"
-        ],
-        "on_error": [
-            "有没有网络连接失败"
+            "进入游戏前的等待60s"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2314,
-                "y": 366
+                "x": 2076,
+                "y": 314
             }
         }
     },
@@ -103,6 +97,33 @@
             "position": {
                 "x": 3391,
                 "y": 348
+            }
+        }
+    },
+    "进入游戏前的等待60s": {
+        "post_delay": 60000,
+        "next": [
+            "进入游戏"
+        ],
+        "on_error": [
+            "有没有网络连接失败"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2414,
+                "y": 265
+            }
+        }
+    },
+    "关闭网络错误后等待20s": {
+        "post_delay": 20000,
+        "next": [
+            "进入游戏"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2968,
+                "y": 585
             }
         }
     }
