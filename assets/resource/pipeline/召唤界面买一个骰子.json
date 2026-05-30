@@ -3,13 +3,24 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1780148669826,
+            "isModifiedExternally": false,
+            "filePath": "D:\\Application\\Automate\\Dragonheir\\assets\\resource\\pipeline\\召唤界面买一个骰子.json",
             "savedViewport": {
-                "x": -2554,
-                "y": 79,
-                "zoom": 0.66
+                "x": -3155,
+                "y": 176,
+                "zoom": 0.75
             },
             "filename": "召唤界面买一个骰子",
             "version": "v1.5.3"
+        }
+    },
+    "$__mpe_external_按Esc返回主界面开始_召唤界面买一个骰子": {
+        "$__mpe_code": {
+            "position": {
+                "x": 5443,
+                "y": 197
+            }
         }
     },
     "召唤界面买一个骰子开始": {
@@ -20,34 +31,6 @@
             "position": {
                 "x": 4050,
                 "y": 98
-            }
-        }
-    },
-    "进入召唤界面": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    680,
-                    4,
-                    593,
-                    71
-                ],
-                "template": [
-                    "召唤图标.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "点击骰子购买"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 4400,
-                "y": 92
             }
         }
     },
@@ -85,8 +68,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 4745,
-                "y": 71
+                "x": 4775,
+                "y": -52
             }
         }
     },
@@ -113,16 +96,40 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 5060,
-                "y": 8
+                "x": 5106,
+                "y": -20
             }
         }
     },
-    "$__mpe_external_按Esc返回主界面开始_召唤界面买一个骰子": {
+    "进入召唤界面": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    680,
+                    4,
+                    593,
+                    71
+                ],
+                "template": [
+                    "召唤图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
+        "next": [
+            "点击骰子购买"
+        ],
+        "on_error": [
+            "按Esc返回主界面开始"
+        ],
         "$__mpe_code": {
             "position": {
-                "x": 5434,
-                "y": 159
+                "x": 4370,
+                "y": 92
             }
         }
     }
