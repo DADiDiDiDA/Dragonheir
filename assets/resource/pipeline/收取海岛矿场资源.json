@@ -3,24 +3,16 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1780140656194,
+            "isModifiedExternally": false,
+            "filePath": "D:\\Application\\Automate\\Dragonheir\\assets\\resource\\pipeline\\收取海岛矿场资源.json",
             "savedViewport": {
-                "x": -1824,
-                "y": 174,
-                "zoom": 0.66
+                "x": -2418,
+                "y": 104,
+                "zoom": 0.99
             },
             "filename": "收取海岛矿场资源",
             "version": "v1.5.3"
-        }
-    },
-    "无海岛界面-已位于海岛矿场": {
-        "next": [
-            "开始进入矿场"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2758,
-                "y": 266
-            }
         }
     },
     "$__mpe_external_按Esc返回主界面开始_收取海岛矿场资源": {
@@ -28,50 +20,6 @@
             "position": {
                 "x": 4098,
                 "y": 118
-            }
-        }
-    },
-    "收取海岛资源开始-矿场": {
-        "timeout": 3000,
-        "next": [
-            "进入海岛界面-矿场"
-        ],
-        "on_error": [
-            "无海岛界面-已位于海岛矿场"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2376,
-                "y": 99
-            }
-        }
-    },
-    "进入海岛界面-矿场": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    775,
-                    641,
-                    489,
-                    57
-                ],
-                "expected": [
-                    "海岛"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 5000,
-        "next": [
-            "开始进入矿场"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2743,
-                "y": -130
             }
         }
     },
@@ -91,7 +39,15 @@
             }
         },
         "action": {
-            "type": "Click"
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    11,
+                    -57,
+                    0,
+                    0
+                ]
+            }
         },
         "post_delay": 3000,
         "next": [
@@ -130,6 +86,61 @@
             "position": {
                 "x": 3635,
                 "y": 90
+            }
+        }
+    },
+    "收取海岛资源开始-矿场": {
+        "timeout": 3000,
+        "next": [
+            "进入海岛界面-矿场"
+        ],
+        "on_error": [
+            "无海岛界面-已位于海岛矿场"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2376,
+                "y": 99
+            }
+        }
+    },
+    "无海岛界面-已位于海岛矿场": {
+        "next": [
+            "开始进入矿场"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2758,
+                "y": 266
+            }
+        }
+    },
+    "进入海岛界面-矿场": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    775,
+                    641,
+                    489,
+                    57
+                ],
+                "expected": [
+                    "海岛"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 5000,
+        "next": [
+            "开始进入矿场"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2743,
+                "y": -130
             }
         }
     }

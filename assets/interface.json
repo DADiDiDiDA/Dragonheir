@@ -103,15 +103,15 @@
         "开始选择打什么关卡": {
             "type": "select",
             "label": "副本选择",
-            "description": "选择要自动刷取的副本类型",
-            "default_case": "经验关卡",
+            "description": "选择要自动刷取的副本",
+            "default_case": "剧毒墓穴",
             "cases": [
                 {
                     "name": "经验关卡",
-                    "label": "经验关卡",
+                    "label": "经验或金币关卡",
                     "description": "扫荡经验天赋副本",
                     "pipeline_override": {
-                        "刷体力选择关卡": {
+                        "开始选择打什么关卡": {
                             "next": ["选择经验关卡开始"]
                         }
                     }
@@ -121,7 +121,7 @@
                     "label": "电毒天赋",
                     "description": "扫荡电毒天赋副本",
                     "pipeline_override": {
-                        "刷体力选择关卡": {
+                        "开始选择打什么关卡": {
                             "next": ["选择电毒天赋关卡开始"]
                         }
                     }
@@ -131,7 +131,7 @@
                     "label": "霜火天赋",
                     "description": "扫荡霜火天赋副本",
                     "pipeline_override": {
-                        "刷体力选择关卡": {
+                        "开始选择打什么关卡": {
                             "next": ["选择霜火天赋关卡开始"]
                         }
                     }
@@ -141,7 +141,7 @@
                     "label": "光黯天赋",
                     "description": "扫荡光黯天赋副本",
                     "pipeline_override": {
-                        "刷体力选择关卡": {
+                        "开始选择打什么关卡": {
                             "next": ["选择光黯天赋关卡开始"]
                         }
                     }
@@ -151,7 +151,7 @@
                     "label": "剧毒墓穴",
                     "description": "扫荡剧毒墓穴装备副本",
                     "pipeline_override": {
-                        "刷体力选择关卡": {
+                        "开始选择打什么关卡": {
                             "next": ["选择剧毒墓穴关卡开始"]
                         }
                     }
@@ -161,7 +161,7 @@
                     "label": "诅咒巢穴",
                     "description": "扫荡诅咒巢穴装备副本",
                     "pipeline_override": {
-                        "刷体力选择关卡": {
+                        "开始选择打什么关卡": {
                             "next": ["选择诅咒巢穴关卡开始"]
                         }
                     }
@@ -171,7 +171,7 @@
                     "label": "腐烂墓穴",
                     "description": "扫荡腐烂墓穴装备副本",
                     "pipeline_override": {
-                        "刷体力选择关卡": {
+                        "开始选择打什么关卡": {
                             "next": ["选择腐烂墓穴关卡开始"]
                         }
                     }
@@ -181,7 +181,7 @@
                     "label": "异教遗迹",
                     "description": "扫荡异教遗迹装备副本",
                     "pipeline_override": {
-                        "刷体力选择关卡": {
+                        "开始选择打什么关卡": {
                             "next": ["选择异教遗迹关卡开始"]
                         }
                     }
@@ -191,7 +191,7 @@
                     "label": "古战场遗迹",
                     "description": "扫荡古战场遗迹装备副本",
                     "pipeline_override": {
-                        "刷体力选择关卡": {
+                        "开始选择打什么关卡": {
                             "next": ["选择古战场遗迹关卡开始"]
                         }
                     }
@@ -201,13 +201,13 @@
         "战斗方式选择": {
             "type": "select",
             "label": "战斗方式",
-            "description": "选择副本扫荡方式",
-            "default_case": "一键扫荡方式",
+            "description": "选择副本挑战方式",
+            "default_case": "正常挑战方式",
             "cases": [
                 {
                     "name": "一键扫荡方式",
                     "label": "一键扫荡（使用扫荡券）",
-                    "description": "使用扫荡券快速完成",
+                    "description": "使用扫荡券快速完成；必须要有足够的扫荡卷",
                     "pipeline_override": {
                         "选择完成关卡方式": {
                             "next": ["一键扫荡方式"]
