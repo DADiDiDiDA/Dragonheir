@@ -3,94 +3,23 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1780114449404,
+            "isModifiedExternally": false,
+            "filePath": "D:\\Application\\Automate\\Dragonheir\\assets\\resource\\pipeline\\领取任务奖励.json",
             "savedViewport": {
-                "x": -6472,
-                "y": -157,
-                "zoom": 0.76
+                "x": -5741,
+                "y": -56,
+                "zoom": 0.66
             },
             "filename": "领取任务奖励",
             "version": "v1.5.3"
         }
     },
-    "领取任务奖励开始": {
-        "next": [
-            "选择任务界面-任务奖励"
-        ],
+    "$__mpe_external_按Esc返回主界面开始_领取任务奖励": {
         "$__mpe_code": {
             "position": {
-                "x": 7855,
-                "y": 587
-            }
-        }
-    },
-    "选择任务界面-任务奖励": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    690,
-                    17,
-                    589,
-                    65
-                ],
-                "template": [
-                    "任务图标.png"
-                ],
-                "green_mask": true,
-                "threshold": [
-                    0.6
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "进入每日任务界面开始"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 8179,
-                "y": 490
-            }
-        }
-    },
-    "进入每日任务界面开始": {
-        "next": [
-            "进入每日任务界面"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 8472,
-                "y": 520
-            }
-        }
-    },
-    "进入每日任务界面": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    34,
-                    324,
-                    70,
-                    29
-                ],
-                "expected": [
-                    "日常"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "开始领取每日任务奖励"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 8753,
-                "y": 458
+                "x": 9978,
+                "y": 667
             }
         }
     },
@@ -106,42 +35,6 @@
             "position": {
                 "x": 9068,
                 "y": 476
-            }
-        }
-    },
-    "领取每日任务奖励": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    1036,
-                    216,
-                    173,
-                    76
-                ],
-                "expected": [
-                    "领取"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "点击任务奖励"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 9431,
-                "y": 380
-            }
-        }
-    },
-    "$__mpe_external_按Esc返回主界面开始_领取任务奖励": {
-        "$__mpe_code": {
-            "position": {
-                "x": 9978,
-                "y": 667
             }
         }
     },
@@ -177,6 +70,116 @@
         "$__mpe_code": {
             "position": {
                 "x": 9691,
+                "y": 380
+            }
+        }
+    },
+    "进入每日任务界面": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    34,
+                    324,
+                    70,
+                    29
+                ],
+                "expected": [
+                    "日常"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "开始领取每日任务奖励"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 8753,
+                "y": 458
+            }
+        }
+    },
+    "进入每日任务界面开始": {
+        "next": [
+            "进入每日任务界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 8472,
+                "y": 520
+            }
+        }
+    },
+    "选择任务界面-任务奖励": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    693,
+                    4,
+                    576,
+                    65
+                ],
+                "template": [
+                    "任务图标.png"
+                ],
+                "green_mask": true,
+                "threshold": [
+                    0.5
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "进入每日任务界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 8179,
+                "y": 490
+            }
+        }
+    },
+    "领取任务奖励开始": {
+        "next": [
+            "选择任务界面-任务奖励"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7855,
+                "y": 587
+            }
+        }
+    },
+    "领取每日任务奖励": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1036,
+                    216,
+                    173,
+                    76
+                ],
+                "expected": [
+                    "领取"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "点击任务奖励"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 9431,
                 "y": 380
             }
         }

@@ -4,15 +4,23 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": -3154,
-                "y": 114,
+                "x": -6266,
+                "y": -632,
                 "zoom": 0.66
             },
             "filename": "刷体力开始",
             "version": "v1.5.3"
         }
     },
-    "一键扫荡": {
+    "$__mpe_external_按Esc返回主界面开始_刷体力开始": {
+        "$__mpe_code": {
+            "position": {
+                "x": 11182,
+                "y": 1358
+            }
+        }
+    },
+    "一键扫荡方式进入": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -36,19 +44,41 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 7734,
-                "y": 611
+                "x": 7464,
+                "y": 274
             }
         }
     },
-    "开始一键扫荡": {
+    "开始快速体力消耗": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1093,
+                    436,
+                    188,
+                    66
+                ],
+                "expected": [
+                    "快速战斗"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "timeout": 5000,
+        "rate_limit": 800,
         "next": [
-            "一键扫荡"
+            "调整快速战斗次数"
+        ],
+        "on_error": [
+            "开始正常战斗执行"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 7252,
-                "y": 697
+                "x": 8747,
+                "y": 899
             }
         }
     },
@@ -78,8 +108,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 8185,
-                "y": 593
+                "x": 8194,
+                "y": 285
             }
         }
     },
@@ -355,6 +385,78 @@
             }
         }
     },
+    "有关卡提示信息-刷体力": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    567,
+                    476,
+                    147,
+                    57
+                ],
+                "expected": [
+                    "继续"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "开始进入快速战斗界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 8263,
+                "y": 703
+            }
+        }
+    },
+    "有没有关卡提示信息-刷体力": {
+        "timeout": 8000,
+        "next": [
+            "有关卡提示信息-刷体力"
+        ],
+        "on_error": [
+            "开始进入快速战斗界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7974,
+                "y": 754
+            }
+        }
+    },
+    "正常挑战方式": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    795,
+                    612,
+                    458,
+                    78
+                ],
+                "expected": [
+                    "挑战"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 7000,
+        "next": [
+            "是否有体力不足提示"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7207,
+                "y": 908
+            }
+        }
+    },
     "确认扫荡正式开始": {
         "recognition": {
             "type": "OCR",
@@ -379,8 +481,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 8567,
-                "y": 681
+                "x": 8775,
+                "y": 419
             }
         }
     },
@@ -444,7 +546,7 @@
         },
         "post_delay": 3000,
         "next": [
-            "开始一键扫荡"
+            "选择完成关卡方式"
         ],
         "$__mpe_code": {
             "position": {
@@ -484,7 +586,7 @@
         },
         "post_delay": 3000,
         "next": [
-            "开始一键扫荡"
+            "选择完成关卡方式"
         ],
         "$__mpe_code": {
             "position": {
@@ -524,7 +626,7 @@
         },
         "post_delay": 3000,
         "next": [
-            "开始一键扫荡"
+            "选择完成关卡方式"
         ],
         "$__mpe_code": {
             "position": {
@@ -541,6 +643,17 @@
             "position": {
                 "x": 5461,
                 "y": 2277
+            }
+        }
+    },
+    "选择完成关卡方式": {
+        "next": [
+            "正常挑战方式"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6959,
+                "y": 687
             }
         }
     },
@@ -564,7 +677,7 @@
         },
         "post_delay": 3000,
         "next": [
-            "开始一键扫荡"
+            "选择完成关卡方式"
         ],
         "$__mpe_code": {
             "position": {
@@ -604,7 +717,7 @@
         },
         "post_delay": 3000,
         "next": [
-            "开始一键扫荡"
+            "选择完成关卡方式"
         ],
         "$__mpe_code": {
             "position": {
@@ -644,7 +757,7 @@
         },
         "post_delay": 3000,
         "next": [
-            "开始一键扫荡"
+            "选择完成关卡方式"
         ],
         "$__mpe_code": {
             "position": {
@@ -684,7 +797,7 @@
         },
         "post_delay": 3000,
         "next": [
-            "开始一键扫荡"
+            "选择完成关卡方式"
         ],
         "$__mpe_code": {
             "position": {
@@ -724,7 +837,7 @@
         },
         "post_delay": 3000,
         "next": [
-            "开始一键扫荡"
+            "选择完成关卡方式"
         ],
         "$__mpe_code": {
             "position": {
@@ -764,7 +877,7 @@
         },
         "post_delay": 3000,
         "next": [
-            "开始一键扫荡"
+            "选择完成关卡方式"
         ],
         "$__mpe_code": {
             "position": {
@@ -784,11 +897,252 @@
             }
         }
     },
-    "$__mpe_external_按Esc返回主界面开始_刷体力开始": {
+    "有没有装备提示-刷体力": {
+        "timeout": 8000,
+        "next": [
+            "有装备提示-刷体力"
+        ],
+        "on_error": [
+            "等待刷体力结束"
+        ],
         "$__mpe_code": {
             "position": {
-                "x": 9022,
-                "y": 910
+                "x": 10075,
+                "y": 1250
+            }
+        }
+    },
+    "有装备提示-刷体力": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    363,
+                    489,
+                    256,
+                    84
+                ],
+                "expected": [
+                    "继续"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "等待刷体力结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 10330,
+                "y": 1113
+            }
+        }
+    },
+    "等待刷体力结束": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "时间",
+                    "奖励"
+                ]
+            }
+        },
+        "pre_wait_freezes": {
+            "time": 8000,
+            "target": [
+                599,
+                382,
+                676,
+                337
+            ]
+        },
+        "next": [
+            "按Esc返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 10635,
+                "y": 1426
+            }
+        }
+    },
+    "调整快速战斗次数": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1031,
+                    133,
+                    184,
+                    159
+                ],
+                "expected": [
+                    "10"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "调整快速战斗倍率"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 9087,
+                "y": 940
+            }
+        }
+    },
+    "开始进入快速战斗界面": {
+        "timeout": 4000,
+        "next": [
+            "开始快速体力消耗"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 8439,
+                "y": 937
+            }
+        }
+    },
+    "调整快速战斗倍率": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1107,
+                    330,
+                    71,
+                    49
+                ],
+                "expected": [
+                    "4"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "快速战斗正式开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 9496,
+                "y": 980
+            }
+        }
+    },
+    "快速战斗正式开始": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    887,
+                    554,
+                    160,
+                    47
+                ],
+                "expected": [
+                    "开始"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "有没有装备提示-刷体力"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 9779,
+                "y": 985
+            }
+        }
+    },
+    "开始正常战斗执行": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1099,
+                    512,
+                    172,
+                    193
+                ],
+                "template": [
+                    "战斗开始图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "有没有装备提示-刷体力"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 8864,
+                "y": 1272
+            }
+        }
+    },
+    "是否有体力不足提示": {
+        "timeout": 5000,
+        "next": [
+            "体力不足无法挑战"
+        ],
+        "on_error": [
+            "有没有关卡提示信息-刷体力"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7473,
+                "y": 760
+            }
+        }
+    },
+    "体力不足无法挑战": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    615,
+                    497,
+                    325,
+                    107
+                ],
+                "expected": [
+                    "转化"
+                ]
+            }
+        },
+        "next": [
+            "按Esc返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7695,
+                "y": 528
+            }
+        }
+    },
+    "一键扫荡方式": {
+        "next": [
+            "一键扫荡方式进入"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7158,
+                "y": 355
             }
         }
     }

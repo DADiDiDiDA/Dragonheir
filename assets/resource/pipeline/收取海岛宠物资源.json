@@ -4,9 +4,9 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": -2116,
-                "y": 179,
-                "zoom": 0.69
+                "x": -2999,
+                "y": 354,
+                "zoom": 0.89
             },
             "filename": "收取海岛宠物资源",
             "version": "v1.5.3"
@@ -149,6 +149,9 @@
         "next": [
             "开始孵化新的魔宠"
         ],
+        "on_error": [
+            "按Esc返回主界面开始"
+        ],
         "$__mpe_code": {
             "position": {
                 "x": 4022,
@@ -179,8 +182,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 4283,
-                "y": -204
+                "x": 4363,
+                "y": -260
             }
         }
     },

@@ -3,13 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1780026784525,
+            "lastSyncTime": 1780111820698,
             "isModifiedExternally": false,
             "filePath": "D:\\Application\\Automate\\Dragonheir\\assets\\resource\\pipeline\\按Esc返回主界面.json",
             "savedViewport": {
-                "x": -3490,
-                "y": -121,
-                "zoom": 0.65
+                "x": -2901,
+                "y": -340,
+                "zoom": 0.57
             },
             "filename": "按Esc返回主界面",
             "version": "v1.5.3"
@@ -40,6 +40,32 @@
             }
         }
     },
+    "左下角返回按键": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    7,
+                    615,
+                    173,
+                    94
+                ],
+                "expected": [
+                    "返回"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 10000,
+        "$__mpe_code": {
+            "position": {
+                "x": 6348,
+                "y": 736
+            }
+        }
+    },
     "按Esc返回主界面开始": {
         "post_delay": 2000,
         "timeout": 2000,
@@ -47,6 +73,7 @@
             "主界面检测-按Esc返回主界面"
         ],
         "on_error": [
+            "[JumpBack]左下角返回按键",
             "[JumpBack]点击Esc返回主界面"
         ],
         "$__mpe_code": {
@@ -75,11 +102,11 @@
                 ]
             }
         },
-        "post_delay": 2000,
+        "post_delay": 4000,
         "$__mpe_code": {
             "position": {
-                "x": 6350,
-                "y": 802
+                "x": 6329,
+                "y": 1067
             }
         }
     }
