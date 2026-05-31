@@ -3,13 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1780110281637,
+            "lastSyncTime": 1780186034675,
             "isModifiedExternally": false,
             "filePath": "D:\\Application\\Automate\\Dragonheir\\assets\\resource\\pipeline\\刷取时空涡流.json",
             "savedViewport": {
-                "x": 144,
-                "y": 457,
-                "zoom": 0.57
+                "x": -3403,
+                "y": 98,
+                "zoom": 0.65
             },
             "filename": "刷取时空涡流",
             "version": "v1.5.3"
@@ -34,7 +34,36 @@
             }
         }
     },
+    "开始切换到时空涡流": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    2,
+                    0,
+                    278,
+                    68
+                ],
+                "template": [
+                    "涡流切换按钮.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "开始确认时空涡流奖励"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2282,
+                "y": -847
+            }
+        }
+    },
     "开始涡流奖励确认": {
+        "timeout": -1,
         "next": [
             "涡流奖励确认"
         ],
@@ -74,8 +103,22 @@
             }
         }
     },
-    "开始等待画面无变化10s": {
-        "post_wait_freezes": 10000,
+    "开始确认时空涡流奖励": {
+        "timeout": 4000,
+        "next": [
+            "确认时空涡流奖励"
+        ],
+        "on_error": [
+            "涡流奖励已领取开始挑战"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2590,
+                "y": -615
+            }
+        }
+    },
+    "开始等待画面无变化涡流": {
         "next": [
             "开始涡流奖励确认"
         ],
@@ -120,7 +163,7 @@
             "type": "Click"
         },
         "next": [
-            "开始等待画面无变化10s"
+            "开始等待画面无变化涡流"
         ],
         "$__mpe_code": {
             "position": {
@@ -135,12 +178,48 @@
             "有没有提示什么的"
         ],
         "on_error": [
-            "开始等待画面无变化10s"
+            "开始等待画面无变化涡流"
         ],
         "$__mpe_code": {
             "position": {
                 "x": 5472,
                 "y": -15
+            }
+        }
+    },
+    "检查狂暴涡流关键词": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    2,
+                    0,
+                    323,
+                    70
+                ],
+                "expected": [
+                    "狂暴"
+                ]
+            }
+        },
+        "next": [
+            "检测到是狂暴涡流-开始切换"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1659,
+                "y": -729
+            }
+        }
+    },
+    "检测到是狂暴涡流-开始切换": {
+        "next": [
+            "开始切换到时空涡流"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1949,
+                "y": -797
             }
         }
     },
@@ -327,6 +406,21 @@
             }
         }
     },
+    "确认涡流奖励开始": {
+        "timeout": 5000,
+        "next": [
+            "确认涡流奖励第一次"
+        ],
+        "on_error": [
+            "涡流奖励已领取开始挑战"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3225,
+                "y": -860
+            }
+        }
+    },
     "确认涡流奖励第一次": {
         "recognition": {
             "type": "OCR",
@@ -352,6 +446,17 @@
             "position": {
                 "x": 3613,
                 "y": -1072
+            }
+        }
+    },
+    "确认涡流奖励第二次": {
+        "next": [
+            "确认涡流奖励开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3874,
+                "y": -789
             }
         }
     },
@@ -436,111 +541,6 @@
             "position": {
                 "x": 1359,
                 "y": -549
-            }
-        }
-    },
-    "检查狂暴涡流关键词": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    2,
-                    0,
-                    323,
-                    70
-                ],
-                "expected": [
-                    "狂暴"
-                ]
-            }
-        },
-        "next": [
-            "检测到是狂暴涡流-开始切换"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1659,
-                "y": -729
-            }
-        }
-    },
-    "检测到是狂暴涡流-开始切换": {
-        "next": [
-            "开始切换到时空涡流"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1949,
-                "y": -797
-            }
-        }
-    },
-    "开始切换到时空涡流": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    2,
-                    0,
-                    278,
-                    68
-                ],
-                "template": [
-                    "涡流切换按钮.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "开始确认时空涡流奖励"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2282,
-                "y": -847
-            }
-        }
-    },
-    "开始确认时空涡流奖励": {
-        "timeout": 4000,
-        "next": [
-            "确认时空涡流奖励"
-        ],
-        "on_error": [
-            "涡流奖励已领取开始挑战"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2590,
-                "y": -615
-            }
-        }
-    },
-    "确认涡流奖励第二次": {
-        "next": [
-            "确认涡流奖励开始"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3874,
-                "y": -789
-            }
-        }
-    },
-    "确认涡流奖励开始": {
-        "timeout": 5000,
-        "next": [
-            "确认涡流奖励第一次"
-        ],
-        "on_error": [
-            "涡流奖励已领取开始挑战"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3225,
-                "y": -860
             }
         }
     }
