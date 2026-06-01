@@ -3,13 +3,10 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1780140656194,
-            "isModifiedExternally": false,
-            "filePath": "D:\\Application\\Automate\\Dragonheir\\assets\\resource\\pipeline\\收取海岛矿场资源.json",
             "savedViewport": {
-                "x": -2418,
-                "y": 104,
-                "zoom": 0.99
+                "x": -1437,
+                "y": 210,
+                "zoom": 0.66
             },
             "filename": "收取海岛矿场资源",
             "version": "v1.5.3"
@@ -53,6 +50,9 @@
         "next": [
             "开始领取矿场奖励"
         ],
+        "on_error": [
+            "按Esc返回主界面开始"
+        ],
         "$__mpe_code": {
             "position": {
                 "x": 3176,
@@ -84,8 +84,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3635,
-                "y": 90
+                "x": 3594,
+                "y": -186
             }
         }
     },
