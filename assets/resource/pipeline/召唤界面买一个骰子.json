@@ -3,16 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1780148669826,
-            "isModifiedExternally": false,
-            "filePath": "D:\\Application\\Automate\\Dragonheir\\assets\\resource\\pipeline\\召唤界面买一个骰子.json",
             "savedViewport": {
-                "x": -3155,
-                "y": 176,
-                "zoom": 0.75
+                "x": -3525,
+                "y": 141,
+                "zoom": 0.87
             },
             "filename": "召唤界面买一个骰子",
-            "version": "v1.5.3"
+            "version": "v1.6.0"
         }
     },
     "$__mpe_external_按Esc返回主界面开始_召唤界面买一个骰子": {
@@ -48,7 +45,7 @@
                     "骰子图标.png"
                 ],
                 "threshold": [
-                    0.9
+                    0.85
                 ]
             }
         },
@@ -63,6 +60,7 @@
                 ]
             }
         },
+        "post_delay": 4000,
         "next": [
             "确认骰子购买"
         ],
@@ -120,6 +118,7 @@
             "type": "Click"
         },
         "post_delay": 3000,
+        "timeout": 5000,
         "next": [
             "点击骰子购买"
         ],

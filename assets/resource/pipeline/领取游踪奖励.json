@@ -3,16 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1780114344836,
-            "isModifiedExternally": false,
-            "filePath": "D:\\Application\\Automate\\Dragonheir\\assets\\resource\\pipeline\\领取游踪奖励.json",
             "savedViewport": {
-                "x": -6278,
-                "y": -76,
-                "zoom": 0.66
+                "x": -7028,
+                "y": -67,
+                "zoom": 0.76
             },
             "filename": "领取游踪奖励",
-            "version": "v1.5.3"
+            "version": "v1.6.0"
         }
     },
     "$__mpe_external_按Esc返回主界面开始_领取游踪奖励": {
@@ -35,6 +32,7 @@
         }
     },
     "开始领取任务奖励-游踪": {
+        "post_delay": 4000,
         "timeout": 4000,
         "next": [
             "领取任务奖励-游踪"
@@ -44,12 +42,13 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 10384,
-                "y": 258
+                "x": 10367,
+                "y": 224
             }
         }
     },
     "开始领取任务活跃奖励-游踪": {
+        "post_delay": 4000,
         "timeout": 4000,
         "next": [
             "领取任务活跃奖励-游踪"
@@ -85,6 +84,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 4000,
         "next": [
             "开始选择任务界面"
         ],
@@ -199,6 +199,7 @@
         }
     },
     "领取任务奖励开始_游踪奖励": {
+        "post_delay": 3000,
         "next": [
             "选择任务界面-游踪奖励"
         ],

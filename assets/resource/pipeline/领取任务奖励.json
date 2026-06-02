@@ -3,16 +3,16 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1780114449404,
+            "lastSyncTime": 1780299460826,
             "isModifiedExternally": false,
             "filePath": "D:\\Application\\Automate\\Dragonheir\\assets\\resource\\pipeline\\领取任务奖励.json",
             "savedViewport": {
-                "x": -5741,
-                "y": -56,
-                "zoom": 0.66
+                "x": -4370,
+                "y": -79,
+                "zoom": 0.57
             },
             "filename": "领取任务奖励",
-            "version": "v1.5.3"
+            "version": "v1.6.0"
         }
     },
     "$__mpe_external_按Esc返回主界面开始_领取任务奖励": {
@@ -179,8 +179,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 9431,
-                "y": 380
+                "x": 9370,
+                "y": 316
             }
         }
     }

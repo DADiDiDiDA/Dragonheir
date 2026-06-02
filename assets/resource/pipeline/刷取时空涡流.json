@@ -3,16 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1780186034675,
-            "isModifiedExternally": false,
-            "filePath": "D:\\Application\\Automate\\Dragonheir\\assets\\resource\\pipeline\\刷取时空涡流.json",
             "savedViewport": {
-                "x": -3403,
-                "y": 98,
-                "zoom": 0.65
+                "x": 305,
+                "y": 551,
+                "zoom": 0.76
             },
             "filename": "刷取时空涡流",
-            "version": "v1.5.3"
+            "version": "v1.6.0"
         }
     },
     "$__mpe_external_按Esc返回主界面开始_刷取时空涡流": {
@@ -90,6 +87,7 @@
         }
     },
     "开始确认前往时空涡流界面": {
+        "post_delay": 3000,
         "next": [
             "确认前往时空涡流界面"
         ],
@@ -130,6 +128,7 @@
         }
     },
     "开始进入时空涡流界面": {
+        "post_delay": 3000,
         "timeout": 8000,
         "next": [
             "进入时空涡流界面"
@@ -511,7 +510,8 @@
                     71
                 ],
                 "expected": [
-                    "今日未"
+                    "今日未",
+                    "今日末"
                 ]
             }
         },
@@ -524,8 +524,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 291,
-                "y": -612
+                "x": 250,
+                "y": -587
             }
         }
     },
