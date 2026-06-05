@@ -3,13 +3,24 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1780546846661,
+            "isModifiedExternally": false,
+            "filePath": "D:\\Application\\Automate\\Dragonheir\\assets\\resource\\pipeline\\进入游戏.json",
             "savedViewport": {
-                "x": -651,
-                "y": -224,
-                "zoom": 0.89
+                "x": -414,
+                "y": -19,
+                "zoom": 0.49
             },
             "filename": "进入游戏",
-            "version": "v1.5.3"
+            "version": "v1.6.0"
+        }
+    },
+    "$__mpe_external_按Esc返回主界面开始_进入游戏": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2491,
+                "y": 898
+            }
         }
     },
     "关闭网络失败弹窗": {
@@ -53,13 +64,40 @@
             }
         }
     },
+    "启动龙息游戏": {
+        "action": {
+            "type": "StartApp",
+            "param": {
+                "package": "com.tencent.dragoncn "
+            }
+        },
+        "next": [
+            "进入游戏开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 787,
+                "y": 401
+            }
+        }
+    },
+    "启动龙息游戏开始": {
+        "next": [
+            "启动龙息游戏"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 498,
+                "y": 423
+            }
+        }
+    },
     "有没有网络连接失败": {
+        "post_delay": 6000,
         "timeout": 10000,
         "next": [
-            "关闭网络失败弹窗"
-        ],
-        "on_error": [
-            "进入游戏结束"
+            "关闭网络失败弹窗",
+            "按Esc返回主界面开始"
         ],
         "$__mpe_code": {
             "position": {
@@ -88,14 +126,6 @@
             "position": {
                 "x": 1102,
                 "y": 372
-            }
-        }
-    },
-    "进入游戏结束": {
-        "$__mpe_code": {
-            "position": {
-                "x": 3061,
-                "y": 832
             }
         }
     }

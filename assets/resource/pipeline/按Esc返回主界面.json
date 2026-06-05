@@ -3,10 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1780546191362,
+            "isModifiedExternally": false,
+            "filePath": "D:\\Application\\Automate\\Dragonheir\\assets\\resource\\pipeline\\按Esc返回主界面.json",
             "savedViewport": {
-                "x": -2444,
-                "y": -586,
-                "zoom": 0.49
+                "x": -4025,
+                "y": -266,
+                "zoom": 0.75
             },
             "filename": "按Esc返回主界面",
             "version": "v1.6.0"
@@ -27,13 +30,14 @@
                 ]
             }
         },
+        "post_delay": 5000,
         "next": [
             "按Esc返回主界面结束"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 6292,
-                "y": 363
+                "x": 6283,
+                "y": 306
             }
         }
     },
@@ -59,10 +63,9 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 4000,
         "next": [
-            "关卡内返回确认"
-        ],
-        "on_error": [
+            "关卡内返回确认",
             "好像不是关卡内返回"
         ],
         "$__mpe_code": {
@@ -95,8 +98,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 6716,
-                "y": 1279
+                "x": 6784,
+                "y": 1133
             }
         }
     },
@@ -105,23 +108,35 @@
             "type": "TemplateMatch",
             "param": {
                 "roi": [
-                    1207,
-                    3,
-                    71,
-                    57
+                    1178,
+                    4,
+                    100,
+                    86
                 ],
                 "template": [
                     "连续战斗结束叉号.png"
+                ],
+                "threshold": [
+                    0.55
                 ]
             }
         },
         "action": {
             "type": "Click"
         },
+        "post_delay": 7000,
         "$__mpe_code": {
             "position": {
-                "x": 6322,
-                "y": 837
+                "x": 6325,
+                "y": 847
+            }
+        }
+    },
+    "好像不是关卡内返回": {
+        "$__mpe_code": {
+            "position": {
+                "x": 7031,
+                "y": 1465
             }
         }
     },
@@ -143,7 +158,7 @@
         "action": {
             "type": "Click"
         },
-        "post_delay": 10000,
+        "post_delay": 7000,
         "$__mpe_code": {
             "position": {
                 "x": 6326,
@@ -152,15 +167,13 @@
         }
     },
     "按Esc返回主界面开始": {
-        "post_delay": 3500,
+        "post_delay": 7000,
         "timeout": 3500,
         "next": [
-            "主界面检测-按Esc返回主界面"
-        ],
-        "on_error": [
+            "[JumpBack]有没有按Esc过头了",
+            "主界面检测-按Esc返回主界面",
             "[JumpBack]左下角返回按键",
             "[JumpBack]右上角叉号关闭",
-            "[JumpBack]有没有按Esc过头了",
             "[JumpBack]关卡内返回开始",
             "[JumpBack]有没有获得奖励界面",
             "[JumpBack]有没有可退出界面",
@@ -168,93 +181,16 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 5807,
-                "y": 591
+                "x": 5729,
+                "y": 1197
             }
         }
     },
     "按Esc返回主界面结束": {
-        "post_delay": 3000,
         "$__mpe_code": {
             "position": {
                 "x": 6776,
                 "y": 536
-            }
-        }
-    },
-    "有没有按Esc过头了": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    419,
-                    449,
-                    129,
-                    60
-                ],
-                "expected": [
-                    "取消"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 6326,
-                "y": 1095
-            }
-        }
-    },
-    "点击Esc返回主界面": {
-        "action": {
-            "type": "ClickKey",
-            "param": {
-                "key": [
-                    4,
-                    111
-                ]
-            }
-        },
-        "post_delay": 4000,
-        "$__mpe_code": {
-            "position": {
-                "x": 6301,
-                "y": 2131
-            }
-        }
-    },
-    "好像不是关卡内返回": {
-        "$__mpe_code": {
-            "position": {
-                "x": 7031,
-                "y": 1465
-            }
-        }
-    },
-    "有没有获得奖励界面": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    421,
-                    96,
-                    523,
-                    235
-                ],
-                "expected": [
-                    "获得"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 6340,
-                "y": 1686
             }
         }
     },
@@ -276,10 +212,80 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 7000,
         "$__mpe_code": {
             "position": {
                 "x": 6334,
                 "y": 1911
+            }
+        }
+    },
+    "有没有按Esc过头了": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    419,
+                    449,
+                    129,
+                    60
+                ],
+                "expected": [
+                    "取消"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 7000,
+        "$__mpe_code": {
+            "position": {
+                "x": 6257,
+                "y": 2
+            }
+        }
+    },
+    "有没有获得奖励界面": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    381,
+                    62,
+                    649,
+                    324
+                ],
+                "expected": [
+                    "获得"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 7000,
+        "$__mpe_code": {
+            "position": {
+                "x": 6340,
+                "y": 1686
+            }
+        }
+    },
+    "点击Esc返回主界面": {
+        "action": {
+            "type": "ClickKey",
+            "param": {
+                "key": [
+                    111
+                ]
+            }
+        },
+        "post_delay": 7000,
+        "$__mpe_code": {
+            "position": {
+                "x": 6301,
+                "y": 2131
             }
         }
     }

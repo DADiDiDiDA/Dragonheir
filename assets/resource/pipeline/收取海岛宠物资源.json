@@ -3,56 +3,51 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1780497318894,
+            "isModifiedExternally": false,
+            "filePath": "D:\\Application\\Automate\\Dragonheir\\assets\\resource\\pipeline\\收取海岛宠物资源.json",
             "savedViewport": {
-                "x": -2999,
-                "y": 354,
-                "zoom": 0.89
+                "x": -1036,
+                "y": 117,
+                "zoom": 0.61
             },
             "filename": "收取海岛宠物资源",
-            "version": "v1.5.3"
+            "version": "v1.6.0"
         }
     },
-    "收取海岛资源开始-宠物": {
-        "timeout": 3000,
-        "next": [
-            "进入海岛界面-宠物"
-        ],
-        "on_error": [
-            "无海岛界面-已位于海岛宠物"
-        ],
+    "$__mpe_external_按Esc返回主界面开始_收取海岛宠物资源": {
         "$__mpe_code": {
             "position": {
-                "x": 2476,
-                "y": 149
+                "x": 4571,
+                "y": 44
             }
         }
     },
-    "进入海岛界面-宠物": {
+    "开始孵化新的魔宠": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
-                    775,
-                    641,
-                    489,
-                    57
+                    913,
+                    652,
+                    168,
+                    44
                 ],
                 "expected": [
-                    "海岛"
+                    "放入"
                 ]
             }
         },
         "action": {
             "type": "Click"
         },
-        "post_delay": 5000,
         "next": [
-            "开始进入宠物"
+            "按Esc返回主界面开始"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2843,
-                "y": -80
+                "x": 4363,
+                "y": -260
             }
         }
     },
@@ -76,9 +71,7 @@
         },
         "post_delay": 3000,
         "next": [
-            "开始领取宠物奖励"
-        ],
-        "on_error": [
+            "开始领取宠物奖励",
             "按Esc返回主界面开始"
         ],
         "$__mpe_code": {
@@ -117,6 +110,20 @@
             }
         }
     },
+    "收取海岛资源开始-宠物": {
+        "post_delay": 4000,
+        "timeout": 3000,
+        "next": [
+            "进入海岛界面-宠物",
+            "无海岛界面-已位于海岛宠物"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2476,
+                "y": 149
+            }
+        }
+    },
     "无海岛界面-已位于海岛宠物": {
         "next": [
             "开始进入宠物"
@@ -146,10 +153,9 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 4000,
         "next": [
-            "开始孵化新的魔宠"
-        ],
-        "on_error": [
+            "开始孵化新的魔宠",
             "按Esc返回主界面开始"
         ],
         "$__mpe_code": {
@@ -159,39 +165,32 @@
             }
         }
     },
-    "开始孵化新的魔宠": {
+    "进入海岛界面-宠物": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
-                    913,
-                    652,
-                    168,
-                    44
+                    775,
+                    641,
+                    489,
+                    57
                 ],
                 "expected": [
-                    "放入"
+                    "海岛"
                 ]
             }
         },
         "action": {
             "type": "Click"
         },
+        "post_delay": 5000,
         "next": [
-            "按Esc返回主界面开始"
+            "开始进入宠物"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 4363,
-                "y": -260
-            }
-        }
-    },
-    "$__mpe_external_按Esc返回主界面开始_收取海岛宠物资源": {
-        "$__mpe_code": {
-            "position": {
-                "x": 4571,
-                "y": 44
+                "x": 2843,
+                "y": -80
             }
         }
     }

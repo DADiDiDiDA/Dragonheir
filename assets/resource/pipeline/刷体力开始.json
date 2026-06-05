@@ -3,16 +3,16 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1780186277551,
+            "lastSyncTime": 1780496962268,
             "isModifiedExternally": false,
             "filePath": "D:\\Application\\Automate\\Dragonheir\\assets\\resource\\pipeline\\刷体力开始.json",
             "savedViewport": {
-                "x": -5291,
-                "y": -667,
-                "zoom": 0.65
+                "x": -2515,
+                "y": -72,
+                "zoom": 0.3
             },
             "filename": "刷体力开始",
-            "version": "v1.5.3"
+            "version": "v1.6.0"
         }
     },
     "$__mpe_external_按Esc返回主界面开始_刷体力开始": {
@@ -137,8 +137,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 9761,
-                "y": 1359
+                "x": 9806,
+                "y": 1401
             }
         }
     },
@@ -164,9 +164,7 @@
         "timeout": 5000,
         "rate_limit": 800,
         "next": [
-            "调整快速战斗倍率"
-        ],
-        "on_error": [
+            "调整快速战斗倍率",
             "开始正常战斗执行"
         ],
         "$__mpe_code": {
@@ -560,11 +558,10 @@
         }
     },
     "是否有体力不足提示": {
+        "post_delay": 4000,
         "timeout": 5000,
         "next": [
-            "体力不足无法挑战"
-        ],
-        "on_error": [
+            "体力不足无法挑战",
             "有没有关卡提示信息-刷体力"
         ],
         "$__mpe_code": {
@@ -603,11 +600,10 @@
         }
     },
     "有没有关卡提示信息-刷体力": {
+        "post_delay": 4000,
         "timeout": 8000,
         "next": [
-            "有关卡提示信息-刷体力"
-        ],
-        "on_error": [
+            "有关卡提示信息-刷体力",
             "开始进入快速战斗界面"
         ],
         "$__mpe_code": {
@@ -621,10 +617,8 @@
         "post_delay": 3000,
         "timeout": 4000,
         "next": [
-            "刷体力是否开始检测"
-        ],
-        "on_error": [
             "[JumpBack]装备无法挑战_快速战斗检测",
+            "刷体力是否开始检测",
             "体力不足无法挑战_快速战斗检测"
         ],
         "$__mpe_code": {
@@ -738,8 +732,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 10370,
-                "y": 1604
+                "x": 9850,
+                "y": 1145
             }
         }
     },

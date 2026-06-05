@@ -3,10 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1780497419708,
+            "isModifiedExternally": false,
+            "filePath": "D:\\Application\\Automate\\Dragonheir\\assets\\resource\\pipeline\\领取游踪奖励.json",
             "savedViewport": {
-                "x": -7028,
-                "y": -67,
-                "zoom": 0.76
+                "x": -2773,
+                "y": 7,
+                "zoom": 0.4
             },
             "filename": "领取游踪奖励",
             "version": "v1.6.0"
@@ -35,9 +38,7 @@
         "post_delay": 4000,
         "timeout": 4000,
         "next": [
-            "领取任务奖励-游踪"
-        ],
-        "on_error": [
+            "领取任务奖励-游踪",
             "按Esc返回主界面开始"
         ],
         "$__mpe_code": {
@@ -51,10 +52,8 @@
         "post_delay": 4000,
         "timeout": 4000,
         "next": [
-            "领取任务活跃奖励-游踪"
-        ],
-        "on_error": [
-            "开始领取任务奖励-游踪"
+            "领取任务活跃奖励-游踪",
+            "按Esc返回主界面开始"
         ],
         "$__mpe_code": {
             "position": {
@@ -96,11 +95,10 @@
         }
     },
     "进入每日任务界面开始-游踪奖励": {
+        "post_delay": 4000,
         "timeout": 4000,
         "next": [
-            "检查有无待领取奖励游踪奖励"
-        ],
-        "on_error": [
+            "检查有无待领取奖励游踪奖励",
             "按Esc返回主界面开始"
         ],
         "$__mpe_code": {

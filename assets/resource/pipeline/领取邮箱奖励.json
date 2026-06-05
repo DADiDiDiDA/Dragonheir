@@ -4,12 +4,12 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": -2372,
-                "y": -82,
-                "zoom": 0.57
+                "x": -2203,
+                "y": -214,
+                "zoom": 0.5
             },
             "filename": "领取邮箱奖励",
-            "version": "v1.5.3"
+            "version": "v1.6.0"
         }
     },
     "一键领取邮箱奖励": {
@@ -30,8 +30,10 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 4000,
         "next": [
-            "确认邮箱奖励"
+            "确认邮箱奖励",
+            "返回主界面-邮箱"
         ],
         "$__mpe_code": {
             "position": {
@@ -41,11 +43,10 @@
         }
     },
     "开始一键领取邮箱奖励": {
+        "post_delay": 4000,
         "timeout": 3000,
         "next": [
-            "一键领取邮箱奖励"
-        ],
-        "on_error": [
+            "一键领取邮箱奖励",
             "无待领取奖励-邮箱"
         ],
         "$__mpe_code": {
@@ -55,39 +56,10 @@
             }
         }
     },
-    "开始返回主界面-邮箱": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    1195,
-                    3,
-                    83,
-                    62
-                ],
-                "template": [
-                    "叉号.png"
-                ],
-                "green_mask": true,
-                "threshold": [
-                    0.5
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "无待领取奖励-邮箱"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 5564,
-                "y": 330
-            }
-        }
-    },
     "无待领取奖励-邮箱": {
+        "next": [
+            "按Esc返回主界面开始"
+        ],
         "$__mpe_code": {
             "position": {
                 "x": 6001,
@@ -132,10 +104,10 @@
             "type": "OCR",
             "param": {
                 "roi": [
-                    572,
-                    235,
-                    147,
-                    74
+                    426,
+                    75,
+                    521,
+                    349
                 ],
                 "expected": [
                     "获得"
@@ -150,14 +122,14 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 4847,
-                "y": 366
+                "x": 4882,
+                "y": 153
             }
         }
     },
     "返回主界面-邮箱": {
         "next": [
-            "开始返回主界面-邮箱"
+            "无待领取奖励-邮箱"
         ],
         "$__mpe_code": {
             "position": {
@@ -167,17 +139,24 @@
         }
     },
     "领取邮箱奖励开始": {
+        "post_delay": 4000,
         "timeout": 4000,
         "next": [
-            "点击邮箱"
-        ],
-        "on_error": [
+            "点击邮箱",
             "无待领取奖励-邮箱"
         ],
         "$__mpe_code": {
             "position": {
                 "x": 3219,
                 "y": 410
+            }
+        }
+    },
+    "$__mpe_external_按Esc返回主界面开始_领取邮箱奖励": {
+        "$__mpe_code": {
+            "position": {
+                "x": 6319,
+                "y": 1209
             }
         }
     }

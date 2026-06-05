@@ -3,13 +3,24 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1780497194300,
+            "isModifiedExternally": false,
+            "filePath": "D:\\Application\\Automate\\Dragonheir\\assets\\resource\\pipeline\\开始工会签到.json",
             "savedViewport": {
-                "x": -5629,
-                "y": -260,
-                "zoom": 0.76
+                "x": -5589,
+                "y": -29,
+                "zoom": 0.7
             },
             "filename": "开始工会签到",
-            "version": "v1.5.3"
+            "version": "v1.6.0"
+        }
+    },
+    "$__mpe_external_按Esc返回主界面开始_开始工会签到": {
+        "$__mpe_code": {
+            "position": {
+                "x": 9415,
+                "y": 587
+            }
         }
     },
     "开始工会签到开始": {
@@ -20,6 +31,34 @@
             "position": {
                 "x": 7805,
                 "y": 584
+            }
+        }
+    },
+    "开始进入捐赠界面": {
+        "post_delay": 4000,
+        "timeout": 4000,
+        "next": [
+            "进入捐赠界面",
+            "按Esc返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 8349,
+                "y": 454
+            }
+        }
+    },
+    "开始金币捐赠": {
+        "post_delay": 4000,
+        "timeout": 4000,
+        "next": [
+            "金币捐赠",
+            "按Esc返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 8915,
+                "y": 323
             }
         }
     },
@@ -53,21 +92,6 @@
             }
         }
     },
-    "开始进入捐赠界面": {
-        "timeout": 4000,
-        "next": [
-            "进入捐赠界面"
-        ],
-        "on_error": [
-            "按Esc返回主界面开始"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 8349,
-                "y": 454
-            }
-        }
-    },
     "进入捐赠界面": {
         "recognition": {
             "type": "OCR",
@@ -96,21 +120,6 @@
             }
         }
     },
-    "开始金币捐赠": {
-        "timeout": 4000,
-        "next": [
-            "金币捐赠"
-        ],
-        "on_error": [
-            "按Esc返回主界面开始"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 8915,
-                "y": 323
-            }
-        }
-    },
     "金币捐赠": {
         "recognition": {
             "type": "OCR",
@@ -136,14 +145,6 @@
             "position": {
                 "x": 9236,
                 "y": 225
-            }
-        }
-    },
-    "$__mpe_external_按Esc返回主界面开始_开始工会签到": {
-        "$__mpe_code": {
-            "position": {
-                "x": 9415,
-                "y": 587
             }
         }
     }
