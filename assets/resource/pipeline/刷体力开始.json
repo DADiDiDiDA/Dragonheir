@@ -3,16 +3,16 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1780496962268,
+            "lastSyncTime": 1780878932581,
             "isModifiedExternally": false,
             "filePath": "D:\\Application\\Automate\\Dragonheir\\assets\\resource\\pipeline\\刷体力开始.json",
             "savedViewport": {
-                "x": -2515,
-                "y": -72,
-                "zoom": 0.3
+                "x": -4056,
+                "y": -516,
+                "zoom": 0.57
             },
             "filename": "刷体力开始",
-            "version": "v1.6.0"
+            "version": "v1.6.1"
         }
     },
     "$__mpe_external_按Esc返回主界面开始_刷体力开始": {
@@ -137,8 +137,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 9806,
-                "y": 1401
+                "x": 10075,
+                "y": 1418
             }
         }
     },
@@ -197,8 +197,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 8864,
-                "y": 1272
+                "x": 9180,
+                "y": 1297
             }
         }
     },
@@ -209,8 +209,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 10098,
-                "y": 1365
+                "x": 10399,
+                "y": 1403
             }
         }
     },
@@ -623,8 +623,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 9357,
-                "y": 1496
+                "x": 9667,
+                "y": 1530
             }
         }
     },
@@ -707,8 +707,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 10625,
-                "y": 1345
+                "x": 10714,
+                "y": 1366
             }
         }
     },
@@ -732,8 +732,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 9850,
-                "y": 1145
+                "x": 10070,
+                "y": 1204
             }
         }
     },
