@@ -3,16 +3,16 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1780497419708,
+            "lastSyncTime": 1781660457786,
             "isModifiedExternally": false,
             "filePath": "D:\\Application\\Automate\\Dragonheir\\assets\\resource\\pipeline\\领取游踪奖励.json",
             "savedViewport": {
-                "x": -2773,
-                "y": 7,
-                "zoom": 0.4
+                "x": -5277,
+                "y": 91,
+                "zoom": 0.57
             },
             "filename": "领取游踪奖励",
-            "version": "v1.6.0"
+            "version": "v1.6.1"
         }
     },
     "$__mpe_external_按Esc返回主界面开始_领取游踪奖励": {
@@ -43,8 +43,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 10367,
-                "y": 224
+                "x": 10378,
+                "y": 67
             }
         }
     },
@@ -53,7 +53,7 @@
         "timeout": 4000,
         "next": [
             "领取任务活跃奖励-游踪",
-            "按Esc返回主界面开始"
+            "开始领取任务奖励-游踪"
         ],
         "$__mpe_code": {
             "position": {
@@ -173,13 +173,13 @@
             "type": "OCR",
             "param": {
                 "roi": [
-                    1052,
-                    628,
-                    181,
-                    60
+                    1020,
+                    599,
+                    241,
+                    99
                 ],
                 "expected": [
-                    "领取"
+                    "领取奖励"
                 ]
             }
         },
@@ -191,8 +191,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 10691,
-                "y": 95
+                "x": 10842,
+                "y": 144
             }
         }
     },
@@ -231,8 +231,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 10103,
-                "y": 14
+                "x": 10072,
+                "y": -56
             }
         }
     }

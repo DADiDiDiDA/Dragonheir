@@ -3,16 +3,16 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1780497362695,
+            "lastSyncTime": 1781659757560,
             "isModifiedExternally": false,
             "filePath": "D:\\Application\\Automate\\Dragonheir\\assets\\resource\\pipeline\\收取海岛派遣资源.json",
             "savedViewport": {
-                "x": -3344,
-                "y": -108,
-                "zoom": 0.8
+                "x": -2274,
+                "y": -200,
+                "zoom": 0.57
             },
             "filename": "收取海岛派遣资源",
-            "version": "v1.6.0"
+            "version": "v1.6.1"
         }
     },
     "$__mpe_external_按Esc返回主界面开始_收取海岛派遣资源": {
@@ -46,8 +46,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3824,
-                "y": 330
+                "x": 3782,
+                "y": 319
             }
         }
     },
@@ -82,8 +82,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3521,
-                "y": 370
+                "x": 3452,
+                "y": 263
             }
         }
     },
@@ -106,10 +106,10 @@
             "type": "OCR",
             "param": {
                 "roi": [
-                    960,
-                    360,
-                    154,
-                    102
+                    937,
+                    300,
+                    226,
+                    171
                 ],
                 "expected": [
                     "中心"
@@ -139,8 +139,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2162,
-                "y": 10
+                "x": 1792,
+                "y": -203
             }
         }
     },
@@ -217,8 +217,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 5316,
-                "y": 888
+                "x": 5402,
+                "y": 830
             }
         }
     },
@@ -228,8 +228,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2608,
-                "y": 244
+                "x": 2300,
+                "y": 19
             }
         }
     },
@@ -391,8 +391,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2616,
-                "y": -146
+                "x": 2354,
+                "y": -347
             }
         }
     },
@@ -405,8 +405,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3000,
-                "y": 9
+                "x": 2776,
+                "y": -179
             }
         }
     },
@@ -415,10 +415,10 @@
             "type": "TemplateMatch",
             "param": {
                 "roi": [
-                    981,
-                    321,
-                    100,
-                    81
+                    912,
+                    244,
+                    242,
+                    190
                 ],
                 "template": [
                     "派遣奖励标志.png"
@@ -437,8 +437,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3340,
-                "y": -305
+                "x": 3259,
+                "y": -344
             }
         }
     }
