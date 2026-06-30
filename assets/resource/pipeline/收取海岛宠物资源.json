@@ -3,16 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1780497318894,
-            "isModifiedExternally": false,
-            "filePath": "D:\\Application\\Automate\\Dragonheir\\assets\\resource\\pipeline\\收取海岛宠物资源.json",
             "savedViewport": {
-                "x": -1036,
-                "y": 117,
-                "zoom": 0.61
+                "x": -2205,
+                "y": 299,
+                "zoom": 0.75
             },
             "filename": "收取海岛宠物资源",
-            "version": "v1.6.0"
+            "version": "v1.7.0"
         }
     },
     "$__mpe_external_按Esc返回主界面开始_收取海岛宠物资源": {
@@ -140,13 +137,14 @@
             "type": "OCR",
             "param": {
                 "roi": [
-                    554,
-                    641,
-                    168,
-                    47
+                    543,
+                    611,
+                    220,
+                    107
                 ],
                 "expected": [
-                    "确认"
+                    "确认",
+                    "继续"
                 ]
             }
         },

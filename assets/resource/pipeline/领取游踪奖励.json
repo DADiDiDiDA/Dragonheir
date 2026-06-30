@@ -3,16 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1781660457786,
-            "isModifiedExternally": false,
-            "filePath": "D:\\Application\\Automate\\Dragonheir\\assets\\resource\\pipeline\\领取游踪奖励.json",
             "savedViewport": {
-                "x": -5277,
-                "y": 91,
-                "zoom": 0.57
+                "x": -5581,
+                "y": -19,
+                "zoom": 0.65
             },
             "filename": "领取游踪奖励",
-            "version": "v1.6.1"
+            "version": "v1.7.0"
         }
     },
     "$__mpe_external_按Esc返回主界面开始_领取游踪奖励": {
@@ -25,7 +22,8 @@
     },
     "开始选择任务界面": {
         "next": [
-            "选择游踪的任务界面"
+            "选择游踪的任务界面",
+            "按Esc返回主界面开始"
         ],
         "$__mpe_code": {
             "position": {
