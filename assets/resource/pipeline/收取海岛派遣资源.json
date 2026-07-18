@@ -3,16 +3,16 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1781659757560,
+            "lastSyncTime": 1784248206703,
             "isModifiedExternally": false,
-            "filePath": "D:\\Application\\Automate\\Dragonheir\\assets\\resource\\pipeline\\收取海岛派遣资源.json",
+            "filePath": "D:\\Application\\Automate\\Git-Maawork\\Dragonheir\\assets\\resource\\pipeline\\收取海岛派遣资源.json",
             "savedViewport": {
-                "x": -2274,
-                "y": -200,
+                "x": -1883,
+                "y": -105,
                 "zoom": 0.57
             },
             "filename": "收取海岛派遣资源",
-            "version": "v1.6.1"
+            "version": "v1.7.4"
         }
     },
     "$__mpe_external_按Esc返回主界面开始_收取海岛派遣资源": {
@@ -319,10 +319,10 @@
             "type": "OCR",
             "param": {
                 "roi": [
-                    580,
-                    245,
-                    125,
-                    63
+                    568,
+                    233,
+                    144,
+                    89
                 ],
                 "expected": [
                     "获得"
