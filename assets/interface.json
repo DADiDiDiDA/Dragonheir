@@ -28,63 +28,75 @@
         {
             "name": "🎮 启动游戏",
             "entry": "启动龙息游戏开始",
+            "default_check": true,
             "description": "启动龙息游戏应用，但无法在游戏内执行任务"
         },
         {
             "name": "📧 领取邮箱奖励",
             "entry": "领取邮箱奖励开始",
+            "default_check": true,
             "description": "一键领取邮箱中的所有奖励"
         },
         {
             "name": "⚔️ 第一次刷体力",
             "entry": "进入冒险界面",
+            "default_check": true,
             "description": "自动扫荡指定副本；需要手动选择要刷取的副本类型和战斗方式；确保你打得过最新的关卡！！！打不过用扫荡卷，不然会卡住",
             "option": ["开始选择打什么关卡", "战斗方式选择"]
         },
         {
             "name": "🏛️ 工会签到",
             "entry": "开始工会签到开始",
+            "default_check": true,
             "description": "进入工会并进行金币捐赠签到"
         },
         {
             "name": "🏝️ 收取海岛矿场资源",
             "entry": "收取海岛资源开始-矿场",
+            "default_check": true,
             "description": "领取海岛矿场资源"
         },
         {
             "name": "🐾 收取海岛宠物资源",
             "entry": "收取海岛资源开始-宠物",
+            "default_check": true,
             "description": "领取海岛宠物孵化资源并开始新的孵化"
         },
         {
             "name": "📤 收取海岛派遣资源",
             "entry": "收取海岛资源开始-派遣",
+            "default_check": true,
             "description": "领取海岛派遣任务奖励"
         },
         {
             "name": "🎲 召唤界面购买骰子",
             "entry": "召唤界面买一个骰子开始",
+            "default_check": true,
             "description": "在召唤界面购买一个骰子，以完成每日任务（每次执行都会买一次欧）"
         },
         {
             "name": "🌀 刷取时空涡流",
             "entry": "刷取时空涡流开始",
+            "default_check": true,
             "description": "自动挑战时空涡流并领取奖励（不打狂暴时空涡流欧）"
         },
         {
             "name": "⚔️ 使用剩余体力",
             "entry": "进入冒险界面",
+            "default_check": true,
             "description": "自动扫荡指定副本；需要手动选择要刷取的副本类型和战斗方式；确保你打得过最新的关卡！！！打不过用扫荡卷，不然会卡住",
             "option": ["开始选择打什么关卡", "战斗方式选择"]
         },
         {
             "name": "📋 领取任务奖励",
             "entry": "领取任务奖励开始",
+            "default_check": true,
             "description": "领取每日任务奖励"
         },
         {
             "name": "🎫 领取游踪奖励",
             "entry": "领取任务奖励开始_游踪奖励",
+            "default_check": true,
             "description": "领取游踪奖励"
         }
     ],
