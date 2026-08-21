@@ -3,16 +3,16 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1785803699848,
+            "lastSyncTime": 1787313396150,
             "isModifiedExternally": false,
             "filePath": "D:\\Application\\Automate\\Git-Maawork\\Dragonheir\\assets\\resource\\pipeline\\按Esc返回主界面.json",
             "savedViewport": {
-                "x": -1842,
-                "y": -151,
-                "zoom": 0.37
+                "x": -2474,
+                "y": -743,
+                "zoom": 0.49
             },
             "filename": "按Esc返回主界面",
-            "version": "v1.7.4"
+            "version": "v1.8.0"
         }
     },
     "主界面检测-按Esc返回主界面": {
@@ -36,8 +36,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 6286,
-                "y": 251
+                "x": 6780,
+                "y": 208
             }
         }
     },
@@ -100,6 +100,29 @@
             "position": {
                 "x": 6784,
                 "y": 1133
+            }
+        }
+    },
+    "发生了无法处理的情况": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1228,
+                    27,
+                    28,
+                    15
+                ]
+            }
+        },
+        "post_delay": 2000,
+        "next": [
+            "主界面检测-按Esc返回主界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6274,
+                "y": 2443
             }
         }
     },
@@ -177,7 +200,8 @@
             "[JumpBack]关卡内返回开始",
             "[JumpBack]有没有获得奖励界面",
             "[JumpBack]有没有可退出界面",
-            "[JumpBack]点击Esc返回主界面"
+            "[JumpBack]点击Esc返回主界面",
+            "发生了无法处理的情况"
         ],
         "$__mpe_code": {
             "position": {
@@ -189,8 +213,8 @@
     "按Esc返回主界面结束": {
         "$__mpe_code": {
             "position": {
-                "x": 6776,
-                "y": 536
+                "x": 7163,
+                "y": 455
             }
         }
     },
@@ -215,8 +239,8 @@
         "post_delay": 7000,
         "$__mpe_code": {
             "position": {
-                "x": 6334,
-                "y": 1911
+                "x": 6338,
+                "y": 1784
             }
         }
     },
@@ -267,12 +291,13 @@
         "post_delay": 7000,
         "$__mpe_code": {
             "position": {
-                "x": 6340,
-                "y": 1686
+                "x": 6345,
+                "y": 1551
             }
         }
     },
     "点击Esc返回主界面": {
+        "max_hit": 10,
         "action": {
             "type": "ClickKey",
             "param": {
@@ -284,8 +309,8 @@
         "post_delay": 7000,
         "$__mpe_code": {
             "position": {
-                "x": 6301,
-                "y": 2131
+                "x": 6305,
+                "y": 2050
             }
         }
     }

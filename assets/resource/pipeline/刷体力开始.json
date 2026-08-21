@@ -3,16 +3,16 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1780878932581,
+            "lastSyncTime": 1787313737669,
             "isModifiedExternally": false,
-            "filePath": "D:\\Application\\Automate\\Dragonheir\\assets\\resource\\pipeline\\刷体力开始.json",
+            "filePath": "D:\\Application\\Automate\\Git-Maawork\\Dragonheir\\assets\\resource\\pipeline\\刷体力开始.json",
             "savedViewport": {
-                "x": -4056,
-                "y": -516,
-                "zoom": 0.57
+                "x": -7568,
+                "y": -527,
+                "zoom": 0.86
             },
             "filename": "刷体力开始",
-            "version": "v1.6.1"
+            "version": "v1.8.0"
         }
     },
     "$__mpe_external_按Esc返回主界面开始_刷体力开始": {
@@ -162,7 +162,6 @@
         },
         "post_delay": 3000,
         "timeout": 5000,
-        "rate_limit": 800,
         "next": [
             "调整快速战斗倍率",
             "开始正常战斗执行"
@@ -552,8 +551,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 9655,
-                "y": 1060
+                "x": 9704,
+                "y": 1140
             }
         }
     },
@@ -739,16 +738,17 @@
     },
     "调整快速战斗倍率": {
         "recognition": {
-            "type": "OCR",
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
-                    1107,
-                    330,
-                    71,
-                    49
+                    1081,
+                    305,
+                    95,
+                    78
                 ],
-                "expected": [
-                    "4"
+                "template": [
+                    "奖励倍数图标.png",
+                    "奖励倍数已激活图标.png"
                 ]
             }
         },
@@ -761,8 +761,36 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 9067,
-                "y": 916
+                "x": 9082,
+                "y": 912
+            }
+        }
+    },
+    "调整快速战斗倍率_第二次": {
+        "max_hit": 2,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1079,
+                    302,
+                    121,
+                    93
+                ],
+                "template": [
+                    "奖励倍数图标.png",
+                    "奖励倍数已激活图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 4000,
+        "$__mpe_code": {
+            "position": {
+                "x": 9692,
+                "y": 798
             }
         }
     },
@@ -786,6 +814,7 @@
         },
         "post_delay": 4000,
         "next": [
+            "[JumpBack]调整快速战斗倍率_第二次",
             "快速战斗正式开始"
         ],
         "$__mpe_code": {
