@@ -3,13 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1787313396150,
+            "lastSyncTime": 1787451854266,
             "isModifiedExternally": false,
             "filePath": "D:\\Application\\Automate\\Git-Maawork\\Dragonheir\\assets\\resource\\pipeline\\按Esc返回主界面.json",
             "savedViewport": {
-                "x": -2474,
-                "y": -743,
-                "zoom": 0.49
+                "x": -520,
+                "y": 23,
+                "zoom": 0.2
             },
             "filename": "按Esc返回主界面",
             "version": "v1.8.0"
@@ -30,14 +30,41 @@
                 ]
             }
         },
-        "post_delay": 2500,
+        "post_delay": 5000,
+        "next": [
+            "主界面检测-按Esc返回主界面_第二次",
+            "按Esc返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6404,
+                "y": 22
+            }
+        }
+    },
+    "主界面检测-按Esc返回主界面_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1118,
+                    565,
+                    162,
+                    150
+                ],
+                "template": [
+                    "刷体力标志.png"
+                ]
+            }
+        },
+        "post_delay": 5000,
         "next": [
             "按Esc返回主界面结束"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 6780,
-                "y": 208
+                "x": 6695,
+                "y": 46
             }
         }
     },
@@ -70,8 +97,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 6342,
-                "y": 1177
+                "x": 6345,
+                "y": 1222
             }
         }
     },
@@ -98,31 +125,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 6784,
-                "y": 1133
-            }
-        }
-    },
-    "发生了无法处理的情况": {
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    1228,
-                    27,
-                    28,
-                    15
-                ]
-            }
-        },
-        "post_delay": 2000,
-        "next": [
-            "主界面检测-按Esc返回主界面"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 6274,
-                "y": 2443
+                "x": 6755,
+                "y": 1179
             }
         }
     },
@@ -150,16 +154,16 @@
         "post_delay": 7000,
         "$__mpe_code": {
             "position": {
-                "x": 6325,
-                "y": 847
+                "x": 6320,
+                "y": 898
             }
         }
     },
     "好像不是关卡内返回": {
         "$__mpe_code": {
             "position": {
-                "x": 7031,
-                "y": 1465
+                "x": 7034,
+                "y": 1517
             }
         }
     },
@@ -184,8 +188,8 @@
         "post_delay": 7000,
         "$__mpe_code": {
             "position": {
-                "x": 6326,
-                "y": 605
+                "x": 6346,
+                "y": 514
             }
         }
     },
@@ -201,7 +205,7 @@
             "[JumpBack]有没有获得奖励界面",
             "[JumpBack]有没有可退出界面",
             "[JumpBack]点击Esc返回主界面",
-            "发生了无法处理的情况"
+            "特殊情况无法处理"
         ],
         "$__mpe_code": {
             "position": {
@@ -213,8 +217,8 @@
     "按Esc返回主界面结束": {
         "$__mpe_code": {
             "position": {
-                "x": 7163,
-                "y": 455
+                "x": 7109,
+                "y": 217
             }
         }
     },
@@ -265,8 +269,8 @@
         "post_delay": 7000,
         "$__mpe_code": {
             "position": {
-                "x": 6257,
-                "y": 2
+                "x": 6285,
+                "y": -271
             }
         }
     },
@@ -311,6 +315,28 @@
             "position": {
                 "x": 6305,
                 "y": 2050
+            }
+        }
+    },
+    "特殊情况无法处理": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1227,
+                    33,
+                    6,
+                    11
+                ]
+            }
+        },
+        "next": [
+            "主界面检测-按Esc返回主界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6192,
+                "y": 2429
             }
         }
     }

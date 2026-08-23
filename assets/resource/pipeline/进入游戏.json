@@ -3,23 +3,23 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1783559871614,
+            "lastSyncTime": 1787450514864,
             "isModifiedExternally": false,
             "filePath": "D:\\Application\\Automate\\Git-Maawork\\Dragonheir\\assets\\resource\\pipeline\\进入游戏.json",
             "savedViewport": {
-                "x": -566,
-                "y": -187,
-                "zoom": 0.97
+                "x": 8,
+                "y": -118,
+                "zoom": 0.87
             },
             "filename": "进入游戏",
-            "version": "v1.7.3"
+            "version": "v1.8.0"
         }
     },
     "$__mpe_external_按Esc返回主界面开始_进入游戏": {
         "$__mpe_code": {
             "position": {
-                "x": 2491,
-                "y": 898
+                "x": 2631,
+                "y": 819
             }
         }
     },
@@ -42,25 +42,11 @@
         "action": {
             "type": "Click"
         },
-        "post_delay": 20000,
-        "next": [
-            "关闭网络错误后等待"
-        ],
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 2018,
-                "y": 367
-            }
-        }
-    },
-    "关闭网络错误后等待": {
-        "next": [
-            "有没有网络连接失败"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2421,
-                "y": 461
+                "x": 2195,
+                "y": 318
             }
         }
     },
@@ -76,8 +62,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 787,
-                "y": 401
+                "x": 770,
+                "y": 224
             }
         }
     },
@@ -93,16 +79,16 @@
         }
     },
     "有没有网络连接失败": {
-        "post_delay": 6000,
-        "timeout": 10000,
+        "post_delay": 4000,
+        "timeout": 30000,
         "next": [
-            "关闭网络失败弹窗",
-            "按Esc返回主界面开始"
+            "[JumpBack]关闭网络失败弹窗",
+            "判断游戏是否加载"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2013,
-                "y": 753
+                "x": 1790,
+                "y": 679
             }
         }
     },
@@ -126,6 +112,31 @@
             "position": {
                 "x": 1102,
                 "y": 372
+            }
+        }
+    },
+    "判断游戏是否加载": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1062,
+                    640,
+                    160,
+                    55
+                ],
+                "expected": [
+                    "加载中"
+                ]
+            }
+        },
+        "next": [
+            "按Esc返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2269,
+                "y": 673
             }
         }
     }
