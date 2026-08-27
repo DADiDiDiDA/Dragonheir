@@ -3,16 +3,17 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1787451854266,
+            "lastSyncTime": 1787708345231,
             "isModifiedExternally": false,
+            "isDeleted": false,
             "filePath": "D:\\Application\\Automate\\Git-Maawork\\Dragonheir\\assets\\resource\\pipeline\\按Esc返回主界面.json",
             "savedViewport": {
-                "x": -520,
-                "y": 23,
-                "zoom": 0.2
+                "x": -2056,
+                "y": -513,
+                "zoom": 0.43
             },
             "filename": "按Esc返回主界面",
-            "version": "v1.8.0"
+            "version": "v1.9.0"
         }
     },
     "主界面检测-按Esc返回主界面": {
@@ -203,6 +204,7 @@
             "[JumpBack]右上角叉号关闭",
             "[JumpBack]关卡内返回开始",
             "[JumpBack]有没有获得奖励界面",
+            "[JumpBack]等待刷体力结束_检测",
             "[JumpBack]有没有可退出界面",
             "[JumpBack]点击Esc返回主界面",
             "特殊情况无法处理"
@@ -313,8 +315,8 @@
         "post_delay": 7000,
         "$__mpe_code": {
             "position": {
-                "x": 6305,
-                "y": 2050
+                "x": 6254,
+                "y": 2173
             }
         }
     },
@@ -337,6 +339,40 @@
             "position": {
                 "x": 6192,
                 "y": 2429
+            }
+        }
+    },
+    "等待刷体力结束_检测": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    7,
+                    385,
+                    383,
+                    325
+                ],
+                "expected": [
+                    "返回",
+                    "统计"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1248,
+                    20,
+                    15,
+                    6
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 6284,
+                "y": 1969
             }
         }
     }

@@ -3,16 +3,17 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1787313737669,
+            "lastSyncTime": 1787708266149,
             "isModifiedExternally": false,
+            "isDeleted": false,
             "filePath": "D:\\Application\\Automate\\Git-Maawork\\Dragonheir\\assets\\resource\\pipeline\\刷体力开始.json",
             "savedViewport": {
-                "x": -7568,
-                "y": -527,
+                "x": -8476,
+                "y": -974,
                 "zoom": 0.86
             },
             "filename": "刷体力开始",
-            "version": "v1.8.0"
+            "version": "v1.9.0"
         }
     },
     "$__mpe_external_按Esc返回主界面开始_刷体力开始": {
@@ -698,6 +699,17 @@
                 "expected": [
                     "返回",
                     "统计"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1248,
+                    20,
+                    15,
+                    6
                 ]
             }
         },

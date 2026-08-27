@@ -3,13 +3,25 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1787708403297,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "D:\\Application\\Automate\\Git-Maawork\\Dragonheir\\assets\\resource\\pipeline\\领取邮箱奖励.json",
             "savedViewport": {
-                "x": -2203,
-                "y": -214,
-                "zoom": 0.5
+                "x": -3107,
+                "y": -132,
+                "zoom": 0.99
             },
             "filename": "领取邮箱奖励",
-            "version": "v1.6.0"
+            "version": "v1.9.0"
+        }
+    },
+    "$__mpe_external_按Esc返回主界面开始_领取邮箱奖励": {
+        "$__mpe_code": {
+            "position": {
+                "x": 6319,
+                "y": 1209
+            }
         }
     },
     "一键领取邮箱奖励": {
@@ -90,6 +102,7 @@
             "type": "Click"
         },
         "next": [
+            "[JumpBack]点击邮箱_第二次",
             "开始一键领取邮箱奖励"
         ],
         "$__mpe_code": {
@@ -152,11 +165,32 @@
             }
         }
     },
-    "$__mpe_external_按Esc返回主界面开始_领取邮箱奖励": {
+    "点击邮箱_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    0,
+                    4,
+                    285,
+                    104
+                ],
+                "template": [
+                    "有可领取邮件图标.png"
+                ],
+                "green_mask": true,
+                "threshold": [
+                    0.55
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
         "$__mpe_code": {
             "position": {
-                "x": 6319,
-                "y": 1209
+                "x": 3998,
+                "y": 73
             }
         }
     }
