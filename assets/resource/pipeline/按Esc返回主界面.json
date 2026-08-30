@@ -3,17 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1787708345231,
-            "isModifiedExternally": false,
-            "isDeleted": false,
-            "filePath": "D:\\Application\\Automate\\Git-Maawork\\Dragonheir\\assets\\resource\\pipeline\\按Esc返回主界面.json",
             "savedViewport": {
-                "x": -2056,
-                "y": -513,
-                "zoom": 0.43
+                "x": -2963,
+                "y": -1002,
+                "zoom": 0.57
             },
             "filename": "按Esc返回主界面",
-            "version": "v1.9.0"
+            "version": "v1.9.1"
         }
     },
     "主界面检测-按Esc返回主界面": {
@@ -70,6 +66,7 @@
         }
     },
     "关卡内返回开始": {
+        "max_hit": 10,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -104,6 +101,7 @@
         }
     },
     "关卡内返回确认": {
+        "max_hit": 10,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -132,6 +130,7 @@
         }
     },
     "右上角叉号关闭": {
+        "max_hit": 10,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -161,6 +160,7 @@
         }
     },
     "好像不是关卡内返回": {
+        "max_hit": 10,
         "$__mpe_code": {
             "position": {
                 "x": 7034,
@@ -169,6 +169,7 @@
         }
     },
     "左下角返回按键": {
+        "max_hit": 10,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -196,7 +197,6 @@
     },
     "按Esc返回主界面开始": {
         "post_delay": 2500,
-        "timeout": 3500,
         "next": [
             "[JumpBack]有没有按Esc过头了",
             "主界面检测-按Esc返回主界面",
@@ -225,6 +225,7 @@
         }
     },
     "有没有可退出界面": {
+        "max_hit": 10,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -251,6 +252,7 @@
         }
     },
     "有没有按Esc过头了": {
+        "max_hit": 10,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -277,6 +279,7 @@
         }
     },
     "有没有获得奖励界面": {
+        "max_hit": 10,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -315,12 +318,13 @@
         "post_delay": 7000,
         "$__mpe_code": {
             "position": {
-                "x": 6254,
-                "y": 2173
+                "x": 6190,
+                "y": 2232
             }
         }
     },
     "特殊情况无法处理": {
+        "max_hit": 10,
         "action": {
             "type": "Click",
             "param": {
@@ -337,12 +341,13 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 6192,
-                "y": 2429
+                "x": 6194,
+                "y": 2500
             }
         }
     },
     "等待刷体力结束_检测": {
+        "max_hit": 10,
         "recognition": {
             "type": "OCR",
             "param": {
