@@ -3,13 +3,17 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1788397925602,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "D:\\Application\\Automate\\Git-Maawork\\Dragonheir\\assets\\resource\\pipeline\\领取游踪奖励.json",
             "savedViewport": {
-                "x": -5581,
-                "y": -19,
-                "zoom": 0.65
+                "x": -6957,
+                "y": 17,
+                "zoom": 0.75
             },
             "filename": "领取游踪奖励",
-            "version": "v1.7.0"
+            "version": "v1.9.2"
         }
     },
     "$__mpe_external_按Esc返回主界面开始_领取游踪奖励": {
@@ -21,28 +25,31 @@
         }
     },
     "开始选择任务界面": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    38,
+                    438,
+                    60,
+                    50
+                ],
+                "expected": [
+                    "游踪"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
         "next": [
             "选择游踪的任务界面",
             "按Esc返回主界面开始"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 9179,
-                "y": 266
-            }
-        }
-    },
-    "开始领取任务奖励-游踪": {
-        "post_delay": 4000,
-        "timeout": 4000,
-        "next": [
-            "领取任务奖励-游踪",
-            "按Esc返回主界面开始"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 10378,
-                "y": 67
+                "x": 9072,
+                "y": 303
             }
         }
     },
@@ -50,45 +57,14 @@
         "post_delay": 4000,
         "timeout": 4000,
         "next": [
-            "领取任务活跃奖励-游踪",
-            "开始领取任务奖励-游踪"
+            "[JumpBack]领取任务活跃奖励-游踪",
+            "领取任务奖励-游踪",
+            "按Esc返回主界面开始"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 9731,
-                "y": 213
-            }
-        }
-    },
-    "检查有无待领取奖励游踪奖励": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    33,
-                    366,
-                    92,
-                    118
-                ],
-                "template": [
-                    "待领取奖励.png"
-                ],
-                "threshold": [
-                    0.3
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 4000,
-        "next": [
-            "开始选择任务界面"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 8919,
-                "y": 266
+                "x": 9747,
+                "y": 184
             }
         }
     },
@@ -96,13 +72,13 @@
         "post_delay": 4000,
         "timeout": 4000,
         "next": [
-            "检查有无待领取奖励游踪奖励",
+            "开始选择任务界面",
             "按Esc返回主界面开始"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 8572,
-                "y": 570
+                "x": 8646,
+                "y": 521
             }
         }
     },
@@ -144,9 +120,9 @@
             "param": {
                 "roi": [
                     1049,
-                    104,
-                    125,
-                    60
+                    102,
+                    223,
+                    70
                 ],
                 "expected": [
                     "任务"
@@ -161,8 +137,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 9460,
-                "y": 182
+                "x": 9469,
+                "y": 166
             }
         }
     },
@@ -189,8 +165,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 10842,
-                "y": 144
+                "x": 10347,
+                "y": 241
             }
         }
     },
@@ -224,9 +200,6 @@
         "action": {
             "type": "Click"
         },
-        "next": [
-            "开始领取任务奖励-游踪"
-        ],
         "$__mpe_code": {
             "position": {
                 "x": 10072,

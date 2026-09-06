@@ -1,15 +1,15 @@
 {
-    "$__mpe_config_按Esc返回主界面": {
+    "$__mpe_config_返回主界面": {
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": -2963,
-                "y": -1002,
-                "zoom": 0.57
+                "x": -4958,
+                "y": -498,
+                "zoom": 0.87
             },
-            "filename": "按Esc返回主界面",
-            "version": "v1.9.1"
+            "filename": "返回主界面",
+            "version": "v1.9.2"
         }
     },
     "主界面检测-按Esc返回主界面": {
@@ -34,8 +34,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 6404,
-                "y": 22
+                "x": 6390,
+                "y": -67
             }
         }
     },
@@ -60,13 +60,12 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 6695,
-                "y": 46
+                "x": 6689,
+                "y": -45
             }
         }
     },
     "关卡内返回开始": {
-        "max_hit": 10,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -95,13 +94,12 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 6345,
-                "y": 1222
+                "x": 6361,
+                "y": 1149
             }
         }
     },
     "关卡内返回确认": {
-        "max_hit": 10,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -129,19 +127,75 @@
             }
         }
     },
+    "关闭网络失败弹窗": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    473,
+                    424,
+                    375,
+                    173
+                ],
+                "expected": [
+                    "确定",
+                    "进入"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 10000,
+        "$__mpe_code": {
+            "position": {
+                "x": 6371,
+                "y": 328
+            }
+        }
+    },
     "右上角叉号关闭": {
-        "max_hit": 10,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
                 "roi": [
-                    1178,
-                    4,
-                    100,
-                    86
+                    1058,
+                    1,
+                    219,
+                    165
                 ],
                 "template": [
-                    "连续战斗结束叉号.png"
+                    "连续战斗结束叉号.png",
+                    "关卡类型选择叉号.png",
+                    "叉号.png",
+                    "公会界面叉号.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 7000,
+        "$__mpe_code": {
+            "position": {
+                "x": 6341,
+                "y": 798
+            }
+        }
+    },
+    "右上角纯黑叉号关闭": {
+        "max_hit": 1,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1058,
+                    1,
+                    219,
+                    165
+                ],
+                "template": [
+                    "纯黑叉号.png"
                 ],
                 "threshold": [
                     0.55
@@ -154,13 +208,40 @@
         "post_delay": 7000,
         "$__mpe_code": {
             "position": {
-                "x": 6320,
-                "y": 898
+                "x": 6630,
+                "y": 857
+            }
+        }
+    },
+    "启动龙息游戏": {
+        "action": {
+            "type": "StartApp",
+            "param": {
+                "package": "com.tencent.dragoncn/com.tencent.dragoncn.DragonPlayerActivity"
+            }
+        },
+        "next": [
+            "进入游戏开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4882,
+                "y": 1067
+            }
+        }
+    },
+    "启动龙息游戏开始": {
+        "next": [
+            "启动龙息游戏"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4513,
+                "y": 1268
             }
         }
     },
     "好像不是关卡内返回": {
-        "max_hit": 10,
         "$__mpe_code": {
             "position": {
                 "x": 7034,
@@ -169,7 +250,6 @@
         }
     },
     "左下角返回按键": {
-        "max_hit": 10,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -190,24 +270,25 @@
         "post_delay": 7000,
         "$__mpe_code": {
             "position": {
-                "x": 6346,
-                "y": 514
+                "x": 6360,
+                "y": 565
             }
         }
     },
     "按Esc返回主界面开始": {
         "post_delay": 2500,
+        "timeout": 300000,
         "next": [
             "[JumpBack]有没有按Esc过头了",
             "主界面检测-按Esc返回主界面",
+            "[JumpBack]关闭网络失败弹窗",
             "[JumpBack]左下角返回按键",
             "[JumpBack]右上角叉号关闭",
+            "[JumpBack]右上角纯黑叉号关闭",
             "[JumpBack]关卡内返回开始",
             "[JumpBack]有没有获得奖励界面",
-            "[JumpBack]等待刷体力结束_检测",
             "[JumpBack]有没有可退出界面",
-            "[JumpBack]点击Esc返回主界面",
-            "特殊情况无法处理"
+            "[JumpBack]等待刷体力结束_检测"
         ],
         "$__mpe_code": {
             "position": {
@@ -219,13 +300,12 @@
     "按Esc返回主界面结束": {
         "$__mpe_code": {
             "position": {
-                "x": 7109,
-                "y": 217
+                "x": 7079,
+                "y": 58
             }
         }
     },
     "有没有可退出界面": {
-        "max_hit": 10,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -246,13 +326,12 @@
         "post_delay": 7000,
         "$__mpe_code": {
             "position": {
-                "x": 6338,
-                "y": 1784
+                "x": 6337,
+                "y": 1810
             }
         }
     },
     "有没有按Esc过头了": {
-        "max_hit": 10,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -279,7 +358,6 @@
         }
     },
     "有没有获得奖励界面": {
-        "max_hit": 10,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -305,49 +383,7 @@
             }
         }
     },
-    "点击Esc返回主界面": {
-        "max_hit": 10,
-        "action": {
-            "type": "ClickKey",
-            "param": {
-                "key": [
-                    111
-                ]
-            }
-        },
-        "post_delay": 7000,
-        "$__mpe_code": {
-            "position": {
-                "x": 6190,
-                "y": 2232
-            }
-        }
-    },
-    "特殊情况无法处理": {
-        "max_hit": 10,
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    1227,
-                    33,
-                    6,
-                    11
-                ]
-            }
-        },
-        "next": [
-            "主界面检测-按Esc返回主界面"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 6194,
-                "y": 2500
-            }
-        }
-    },
     "等待刷体力结束_检测": {
-        "max_hit": 10,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -376,8 +412,20 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 6284,
-                "y": 1969
+                "x": 6316,
+                "y": 2111
+            }
+        }
+    },
+    "进入游戏开始": {
+        "post_delay": 45000,
+        "next": [
+            "按Esc返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5218,
+                "y": 1226
             }
         }
     }

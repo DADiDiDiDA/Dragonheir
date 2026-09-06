@@ -3,17 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1787708266149,
-            "isModifiedExternally": false,
-            "isDeleted": false,
-            "filePath": "D:\\Application\\Automate\\Git-Maawork\\Dragonheir\\assets\\resource\\pipeline\\刷体力开始.json",
             "savedViewport": {
-                "x": -8476,
-                "y": -974,
-                "zoom": 0.86
+                "x": -6194,
+                "y": -583,
+                "zoom": 0.76
             },
             "filename": "刷体力开始",
-            "version": "v1.9.0"
+            "version": "v1.9.2"
         }
     },
     "$__mpe_external_按Esc返回主界面开始_刷体力开始": {
@@ -362,7 +358,7 @@
         }
     },
     "开始进入快速战斗界面": {
-        "timeout": 4000,
+        "post_delay": 6000,
         "next": [
             "开始快速体力消耗"
         ],
