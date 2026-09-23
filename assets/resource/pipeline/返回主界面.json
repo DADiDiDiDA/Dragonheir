@@ -4,12 +4,12 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": -4958,
-                "y": -498,
-                "zoom": 0.87
+                "x": -4178,
+                "y": -387,
+                "zoom": 0.75
             },
             "filename": "返回主界面",
-            "version": "v1.9.2"
+            "version": "v1.10.1"
         }
     },
     "主界面检测-按Esc返回主界面": {
@@ -184,7 +184,7 @@
         }
     },
     "右上角纯黑叉号关闭": {
-        "max_hit": 1,
+        "max_hit": 5,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
