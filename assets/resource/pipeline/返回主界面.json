@@ -4,9 +4,9 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": -4178,
-                "y": -387,
-                "zoom": 0.75
+                "x": -2847,
+                "y": 26,
+                "zoom": 0.57
             },
             "filename": "返回主界面",
             "version": "v1.10.1"
@@ -34,8 +34,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 6390,
-                "y": -67
+                "x": 6326,
+                "y": -536
             }
         }
     },
@@ -60,8 +60,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 6689,
-                "y": -45
+                "x": 6648,
+                "y": -511
             }
         }
     },
@@ -149,8 +149,8 @@
         "post_delay": 10000,
         "$__mpe_code": {
             "position": {
-                "x": 6371,
-                "y": 328
+                "x": 6404,
+                "y": 230
             }
         }
     },
@@ -270,8 +270,8 @@
         "post_delay": 7000,
         "$__mpe_code": {
             "position": {
-                "x": 6360,
-                "y": 565
+                "x": 6365,
+                "y": 473
             }
         }
     },
@@ -281,6 +281,7 @@
         "next": [
             "[JumpBack]有没有按Esc过头了",
             "主界面检测-按Esc返回主界面",
+            "[JumpBack]是不是有更新公告",
             "[JumpBack]关闭网络失败弹窗",
             "[JumpBack]左下角返回按键",
             "[JumpBack]右上角叉号关闭",
@@ -300,8 +301,8 @@
     "按Esc返回主界面结束": {
         "$__mpe_code": {
             "position": {
-                "x": 7079,
-                "y": 58
+                "x": 6983,
+                "y": -466
             }
         }
     },
@@ -352,8 +353,8 @@
         "post_delay": 7000,
         "$__mpe_code": {
             "position": {
-                "x": 6285,
-                "y": -271
+                "x": 6300,
+                "y": -825
             }
         }
     },
@@ -426,6 +427,56 @@
             "position": {
                 "x": 5218,
                 "y": 1226
+            }
+        }
+    },
+    "是不是有更新公告": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    7,
+                    6,
+                    79,
+                    60
+                ],
+                "expected": [
+                    "公告"
+                ]
+            }
+        },
+        "next": [
+            "关闭更新公告"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6324,
+                "y": -144
+            }
+        }
+    },
+    "关闭更新公告": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1205,
+                    5,
+                    70,
+                    60
+                ],
+                "template": [
+                    "关卡类型选择叉号.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 6750,
+                "y": -63
             }
         }
     }

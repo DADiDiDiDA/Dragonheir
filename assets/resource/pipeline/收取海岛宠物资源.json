@@ -4,19 +4,19 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": -2205,
-                "y": 299,
-                "zoom": 0.75
+                "x": -2387,
+                "y": 345,
+                "zoom": 0.76
             },
             "filename": "收取海岛宠物资源",
-            "version": "v1.7.0"
+            "version": "v1.10.1"
         }
     },
     "$__mpe_external_按Esc返回主界面开始_收取海岛宠物资源": {
         "$__mpe_code": {
             "position": {
-                "x": 4571,
-                "y": 44
+                "x": 4679,
+                "y": 204
             }
         }
     },
@@ -43,8 +43,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 4363,
-                "y": -260
+                "x": 4440,
+                "y": -213
             }
         }
     },
@@ -98,12 +98,13 @@
         },
         "post_delay": 3000,
         "next": [
-            "确认魔宠奖励"
+            "确认魔宠奖励",
+            "[JumpBack]开始领取宠物奖励_第二次"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3693,
-                "y": -174
+                "x": 3665,
+                "y": -182
             }
         }
     },
@@ -116,8 +117,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2476,
-                "y": 149
+                "x": 2321,
+                "y": 152
             }
         }
     },
@@ -189,6 +190,32 @@
             "position": {
                 "x": 2843,
                 "y": -80
+            }
+        }
+    },
+    "开始领取宠物奖励_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    819,
+                    630,
+                    327,
+                    66
+                ],
+                "expected": [
+                    "收取"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
+        "$__mpe_code": {
+            "position": {
+                "x": 3957,
+                "y": -487
             }
         }
     }

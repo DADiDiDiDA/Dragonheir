@@ -3,17 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1788397925602,
-            "isModifiedExternally": false,
-            "isDeleted": false,
-            "filePath": "D:\\Application\\Automate\\Git-Maawork\\Dragonheir\\assets\\resource\\pipeline\\领取游踪奖励.json",
             "savedViewport": {
-                "x": -6957,
-                "y": 17,
-                "zoom": 0.75
+                "x": -4864,
+                "y": 93,
+                "zoom": 0.57
             },
             "filename": "领取游踪奖励",
-            "version": "v1.9.2"
+            "version": "v1.10.1"
         }
     },
     "$__mpe_external_按Esc返回主界面开始_领取游踪奖励": {
@@ -48,8 +44,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 9072,
-                "y": 303
+                "x": 9042,
+                "y": 327
             }
         }
     },
@@ -105,6 +101,7 @@
             "type": "Click"
         },
         "next": [
+            "[JumpBack]选择任务界面-游踪奖励_第二次",
             "进入每日任务界面开始-游踪奖励"
         ],
         "$__mpe_code": {
@@ -204,6 +201,36 @@
             "position": {
                 "x": 10072,
                 "y": -56
+            }
+        }
+    },
+    "选择任务界面-游踪奖励_第二次": {
+        "max_hit": 1,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    693,
+                    4,
+                    576,
+                    65
+                ],
+                "template": [
+                    "任务图标.png"
+                ],
+                "green_mask": true,
+                "threshold": [
+                    0.5
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 8702,
+                "y": 871
             }
         }
     }

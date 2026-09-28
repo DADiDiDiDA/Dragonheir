@@ -3,17 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1787708403297,
-            "isModifiedExternally": false,
-            "isDeleted": false,
-            "filePath": "D:\\Application\\Automate\\Git-Maawork\\Dragonheir\\assets\\resource\\pipeline\\领取邮箱奖励.json",
             "savedViewport": {
-                "x": -3107,
-                "y": -132,
-                "zoom": 0.99
+                "x": -1741,
+                "y": -159,
+                "zoom": 0.5
             },
             "filename": "领取邮箱奖励",
-            "version": "v1.9.0"
+            "version": "v1.10.1"
         }
     },
     "$__mpe_external_按Esc返回主界面开始_领取邮箱奖励": {
@@ -44,13 +40,14 @@
         },
         "post_delay": 4000,
         "next": [
+            "[JumpBack]一键领取邮箱奖励_第二次",
             "确认邮箱奖励",
             "返回主界面-邮箱"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 4499,
-                "y": 280
+                "x": 4461,
+                "y": 232
             }
         }
     },
@@ -74,8 +71,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 6001,
-                "y": 1179
+                "x": 5332,
+                "y": 883
             }
         }
     },
@@ -160,8 +157,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3219,
-                "y": 410
+                "x": 3127,
+                "y": 441
             }
         }
     },
@@ -191,6 +188,33 @@
             "position": {
                 "x": 3998,
                 "y": 73
+            }
+        }
+    },
+    "一键领取邮箱奖励_第二次": {
+        "max_hit": 2,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    227,
+                    633,
+                    133,
+                    44
+                ],
+                "expected": [
+                    "一键领取"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 4000,
+        "$__mpe_code": {
+            "position": {
+                "x": 4767,
+                "y": 410
             }
         }
     }
