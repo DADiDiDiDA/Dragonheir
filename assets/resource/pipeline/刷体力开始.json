@@ -188,6 +188,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "有没有装备提示-刷体力"
         ],
@@ -543,6 +544,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "有没有装备提示-刷体力"
         ],
@@ -585,6 +587,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "开始进入快速战斗界面"
         ],
@@ -709,6 +712,7 @@
                 ]
             }
         },
+        "post_delay": 2000,
         "next": [
             "按Esc返回主界面开始"
         ],
@@ -737,6 +741,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 10070,

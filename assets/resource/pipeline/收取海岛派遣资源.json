@@ -162,6 +162,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "新的派遣结束-第一页"
         ],
@@ -190,6 +191,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "新的派遣结束-第二页"
         ],
@@ -303,6 +305,7 @@
                 ]
             }
         },
+        "post_delay": 2000,
         "timeout": 4000,
         "next": [
             "开始检查派遣次数是否为0-第三次"
@@ -332,6 +335,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "确认派遣奖励结束"
         ],
@@ -431,6 +435,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "timeout": 4000,
         "next": [
             "确认派遣奖励开始"

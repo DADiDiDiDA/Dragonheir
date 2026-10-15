@@ -92,6 +92,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "按Esc返回主界面开始"
         ],

@@ -60,6 +60,7 @@
                 ]
             }
         },
+        "post_delay": 2000,
         "next": [
             "按Esc返回主界面开始"
         ],
@@ -88,6 +89,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "开始领取每日任务奖励"
         ],
@@ -132,6 +134,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "进入每日任务界面开始"
         ],
@@ -171,6 +174,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "点击任务奖励"
         ],
@@ -203,6 +207,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 8792,

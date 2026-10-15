@@ -4,12 +4,12 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": -4869,
-                "y": -1624,
-                "zoom": 0.87
+                "x": -2688,
+                "y": -356,
+                "zoom": 0.57
             },
             "filename": "返回主界面",
-            "version": "v2.0.6"
+            "version": "v2.1.0"
         }
     },
     "主界面检测-按Esc返回主界面": {
@@ -117,6 +117,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "好像不是关卡内返回"
         ],
@@ -220,6 +221,7 @@
                 "package": "com.tencent.dragoncn/com.tencent.dragoncn.DragonPlayerActivity"
             }
         },
+        "post_delay": 2000,
         "next": [
             "进入游戏开始"
         ],
@@ -411,6 +413,7 @@
                 ]
             }
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 6316,
@@ -446,7 +449,8 @@
             }
         },
         "next": [
-            "关闭更新公告"
+            "关闭更新公告",
+            "公告关闭结束"
         ],
         "$__mpe_code": {
             "position": {
@@ -473,10 +477,22 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
+        "next": [
+            "公告关闭结束"
+        ],
         "$__mpe_code": {
             "position": {
-                "x": 6750,
-                "y": -63
+                "x": 6729,
+                "y": -163
+            }
+        }
+    },
+    "公告关闭结束": {
+        "$__mpe_code": {
+            "position": {
+                "x": 7105,
+                "y": 86
             }
         }
     }

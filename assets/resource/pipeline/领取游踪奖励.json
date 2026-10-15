@@ -38,6 +38,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "选择游踪的任务界面",
             "按Esc返回主界面开始"
@@ -100,6 +101,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "[JumpBack]选择任务界面-游踪奖励_第二次",
             "进入每日任务界面开始-游踪奖励"
@@ -129,6 +131,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "开始领取任务活跃奖励-游踪"
         ],
@@ -157,6 +160,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "按Esc返回主界面开始"
         ],
@@ -197,6 +201,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 10072,
@@ -227,6 +232,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 8702,
