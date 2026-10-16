@@ -1,7 +1,7 @@
 {
     "interface_version": 2,
     "name": "Dragonheir",
-    "description": "Dragonheir自动化",
+    "description": "龙息神寂自动化",
     "contact": "",
     "license": "MIT",
     "welcome": "111",
@@ -29,7 +29,7 @@
             "name": "🎮 启动游戏",
             "entry": "启动龙息游戏开始",
             "default_check": true,
-            "description": "启动龙息游戏应用，但无法在游戏内执行任务"
+            "description": "启动游戏并进入主界面"
         },
         {
             "name": "📧 领取邮箱奖励",
@@ -111,7 +111,7 @@
                 {
                     "name": "经验关卡",
                     "label": "经验或金币关卡",
-                    "description": "扫荡经验天赋副本",
+                    "description": "扫荡经验或金币副本",
                     "pipeline_override": {
                         "开始选择打什么关卡": {
                             "next": ["选择经验关卡开始"]
@@ -151,7 +151,7 @@
                 {
                     "name": "剧毒墓穴",
                     "label": "剧毒墓穴",
-                    "description": "扫荡剧毒墓穴装备副本",
+                    "description": "扫荡剧毒墓穴副本",
                     "pipeline_override": {
                         "开始选择打什么关卡": {
                             "next": ["选择剧毒墓穴关卡开始"]
@@ -161,7 +161,7 @@
                 {
                     "name": "诅咒巢穴",
                     "label": "诅咒巢穴",
-                    "description": "扫荡诅咒巢穴装备副本",
+                    "description": "扫荡诅咒巢穴副本",
                     "pipeline_override": {
                         "开始选择打什么关卡": {
                             "next": ["选择诅咒巢穴关卡开始"]
@@ -171,7 +171,7 @@
                 {
                     "name": "腐烂墓穴",
                     "label": "腐烂墓穴",
-                    "description": "扫荡腐烂墓穴装备副本",
+                    "description": "扫荡腐烂墓穴副本",
                     "pipeline_override": {
                         "开始选择打什么关卡": {
                             "next": ["选择腐烂墓穴关卡开始"]
@@ -181,7 +181,7 @@
                 {
                     "name": "异教遗迹",
                     "label": "异教遗迹",
-                    "description": "扫荡异教遗迹装备副本",
+                    "description": "扫荡异教遗迹副本",
                     "pipeline_override": {
                         "开始选择打什么关卡": {
                             "next": ["选择异教遗迹关卡开始"]
@@ -191,7 +191,7 @@
                 {
                     "name": "古战场遗迹",
                     "label": "古战场遗迹",
-                    "description": "扫荡古战场遗迹装备副本",
+                    "description": "扫荡古战场遗迹副本",
                     "pipeline_override": {
                         "开始选择打什么关卡": {
                             "next": ["选择古战场遗迹关卡开始"]
@@ -208,7 +208,7 @@
             "cases": [
                 {
                     "name": "一键扫荡方式",
-                    "label": "一键扫荡（使用扫荡券）",
+                    "label": "扫荡",
                     "description": "使用扫荡券快速完成；必须要有足够的扫荡卷",
                     "pipeline_override": {
                         "选择完成关卡方式": {
@@ -218,7 +218,7 @@
                 },
                 {
                     "name": "正常挑战方式",
-                    "label": "正常挑战（手动战斗）",
+                    "label": "正常挑战",
                     "description": "不使用扫荡券，正常进入战斗",
                     "pipeline_override": {
                         "选择完成关卡方式": {
