@@ -3,24 +3,24 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1791344415604,
+            "lastSyncTime": 1792374146071,
             "isModifiedExternally": false,
             "isDeleted": false,
-            "filePath": "D:\\Application\\Automate\\Git-Maawork\\Dragonheir\\assets\\resource\\pipeline\\刷取时空涡流.json",
+            "filePath": "D:\\Automate\\Git-Maawork\\Dragonheir\\assets\\resource\\pipeline\\刷取时空涡流.json",
             "savedViewport": {
-                "x": -3570,
-                "y": -129,
-                "zoom": 0.65
+                "x": -791,
+                "y": 499,
+                "zoom": 0.52
             },
             "filename": "刷取时空涡流",
-            "version": "v2.0.7"
+            "version": "v2.1.0"
         }
     },
     "$__mpe_external_按Esc返回主界面开始_刷取时空涡流": {
         "$__mpe_code": {
             "position": {
-                "x": 7188,
-                "y": 754
+                "x": 1509,
+                "y": 11
             }
         }
     },
@@ -51,7 +51,8 @@
     },
     "刷取时空涡流开始": {
         "next": [
-            "进入刷体力界面-刷取时空涡流"
+            "进入刷体力界面-刷取时空涡流",
+            "[JumpBack]按Esc返回主界面开始"
         ],
         "$__mpe_code": {
             "position": {
@@ -79,13 +80,10 @@
             "type": "Click"
         },
         "post_delay": 2000,
-        "next": [
-            "开始确认时空涡流奖励"
-        ],
         "$__mpe_code": {
             "position": {
-                "x": 2282,
-                "y": -847
+                "x": 3366,
+                "y": -1499
             }
         }
     },
@@ -103,7 +101,6 @@
     },
     "开始确认今日Buff": {
         "post_delay": 4000,
-        "timeout": 4000,
         "next": [
             "确认今日Buff",
             "确认涡流挑战"
@@ -131,6 +128,7 @@
     "开始确认时空涡流奖励": {
         "post_delay": 4000,
         "next": [
+            "[JumpBack]检查狂暴涡流关键词",
             "[JumpBack]确认时空涡流奖励",
             "[JumpBack]确认涡流奖励第一次",
             "判断是否挑战过了",
@@ -160,20 +158,6 @@
             }
         }
     },
-    "开始进入时空涡流界面": {
-        "post_delay": 3000,
-        "timeout": 6000,
-        "next": [
-            "进入时空涡流界面",
-            "按Esc返回主界面开始"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -76,
-                "y": -321
-            }
-        }
-    },
     "挑战过了任务结束": {
         "recognition": {
             "type": "OCR",
@@ -195,8 +179,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2942,
-                "y": -200
+                "x": 2792,
+                "y": -131
             }
         }
     },
@@ -231,7 +215,6 @@
     },
     "有没有提示什么的-涡流": {
         "post_delay": 5000,
-        "timeout": 5000,
         "next": [
             "有没有提示什么的",
             "开始等待画面无变化涡流"
@@ -259,23 +242,12 @@
             }
         },
         "next": [
-            "检测到是狂暴涡流-开始切换"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1659,
-                "y": -729
-            }
-        }
-    },
-    "检测到是狂暴涡流-开始切换": {
-        "next": [
             "开始切换到时空涡流"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1949,
-                "y": -797
+                "x": 2910,
+                "y": -1471
             }
         }
     },
@@ -386,6 +358,32 @@
             }
         }
     },
+    "点击挑战界面-涡流_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    730,
+                    641,
+                    162,
+                    42
+                ],
+                "expected": [
+                    "挑战"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 15000,
+        "$__mpe_code": {
+            "position": {
+                "x": 4072,
+                "y": -687
+            }
+        }
+    },
     "确认今日Buff": {
         "recognition": {
             "type": "OCR",
@@ -435,6 +433,7 @@
         },
         "post_delay": 15000,
         "next": [
+            "[JumpBack]确认前往时空涡流界面_第二次",
             "进入的是时空涡流吗"
         ],
         "$__mpe_code": {
@@ -527,16 +526,47 @@
         },
         "post_delay": 3000,
         "next": [
-            "开始进入时空涡流界面"
+            "进入时空涡流界面",
+            "[JumpBack]进入刷体力界面-刷取时空涡流_第二次"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -528,
-                "y": -359
+                "x": -340,
+                "y": -477
             }
         }
     },
     "进入时空涡流界面": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    36,
+                    47,
+                    1019,
+                    74
+                ],
+                "expected": [
+                    "时空涡流"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "[JumpBack]进入时空涡流界面_第二次",
+            "开始确认前往时空涡流界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 250,
+                "y": -587
+            }
+        }
+    },
+    "进入时空涡流界面_第二次": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -555,41 +585,63 @@
             "type": "Click"
         },
         "post_delay": 2000,
-        "next": [
-            "开始确认前往时空涡流界面"
-        ],
         "$__mpe_code": {
             "position": {
-                "x": 250,
-                "y": -587
+                "x": 549,
+                "y": -851
             }
         }
     },
     "进入的是时空涡流吗": {
         "post_delay": 3000,
         "next": [
-            "检查狂暴涡流关键词",
             "开始确认时空涡流奖励"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1359,
-                "y": -549
+                "x": 1729,
+                "y": -551
             }
         }
     },
-    "点击挑战界面-涡流_第二次": {
+    "进入刷体力界面-刷取时空涡流_第二次": {
         "recognition": {
-            "type": "OCR",
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
-                    730,
-                    641,
-                    162,
-                    42
+                    1097,
+                    580,
+                    183,
+                    133
                 ],
-                "expected": [
-                    "挑战"
+                "template": [
+                    "刷体力标志.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
+        "$__mpe_code": {
+            "position": {
+                "x": -65,
+                "y": -788
+            }
+        }
+    },
+    "确认前往时空涡流界面_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1041,
+                    295,
+                    180,
+                    136
+                ],
+                "template": [
+                    "时空涡流确认标志.png"
                 ]
             }
         },
@@ -599,8 +651,8 @@
         "post_delay": 15000,
         "$__mpe_code": {
             "position": {
-                "x": 4072,
-                "y": -687
+                "x": 1399,
+                "y": -943
             }
         }
     }

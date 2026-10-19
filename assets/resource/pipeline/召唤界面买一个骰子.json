@@ -122,7 +122,6 @@
             "type": "Click"
         },
         "post_delay": 3000,
-        "timeout": 5000,
         "next": [
             "点击骰子购买",
             "按Esc返回主界面开始"
