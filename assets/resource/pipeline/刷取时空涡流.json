@@ -3,14 +3,10 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1792374146071,
-            "isModifiedExternally": false,
-            "isDeleted": false,
-            "filePath": "D:\\Automate\\Git-Maawork\\Dragonheir\\assets\\resource\\pipeline\\刷取时空涡流.json",
             "savedViewport": {
-                "x": -791,
-                "y": 499,
-                "zoom": 0.52
+                "x": -559,
+                "y": 603,
+                "zoom": 0.6
             },
             "filename": "刷取时空涡流",
             "version": "v2.1.0"
@@ -113,31 +109,32 @@
         }
     },
     "开始确认前往时空涡流界面": {
-        "post_delay": 2500,
+        "post_delay": 5000,
         "next": [
             "确认前往时空涡流界面",
-            "进入的是时空涡流吗"
+            "开始确认时空涡流奖励"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 609,
-                "y": -539
+                "x": 628,
+                "y": -642
             }
         }
     },
     "开始确认时空涡流奖励": {
-        "post_delay": 4000,
+        "post_delay": 14000,
         "next": [
             "[JumpBack]检查狂暴涡流关键词",
             "[JumpBack]确认时空涡流奖励",
             "[JumpBack]确认涡流奖励第一次",
             "判断是否挑战过了",
-            "挑战过了任务结束"
+            "挑战过了任务结束",
+            "进入刷体力界面-刷取时空涡流"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2590,
-                "y": -615
+                "x": 2439,
+                "y": -647
             }
         }
     },
@@ -179,8 +176,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2792,
-                "y": -131
+                "x": 3024,
+                "y": -306
             }
         }
     },
@@ -431,15 +428,15 @@
         "action": {
             "type": "Click"
         },
-        "post_delay": 15000,
+        "post_delay": 5000,
         "next": [
             "[JumpBack]确认前往时空涡流界面_第二次",
-            "进入的是时空涡流吗"
+            "开始确认时空涡流奖励"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 970,
-                "y": -816
+                "x": 1011,
+                "y": -922
             }
         }
     },
@@ -561,8 +558,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 250,
-                "y": -587
+                "x": 167,
+                "y": -590
             }
         }
     },
@@ -587,20 +584,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 549,
-                "y": -851
-            }
-        }
-    },
-    "进入的是时空涡流吗": {
-        "post_delay": 3000,
-        "next": [
-            "开始确认时空涡流奖励"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 1729,
-                "y": -551
+                "x": 484,
+                "y": -921
             }
         }
     },
@@ -648,11 +633,11 @@
         "action": {
             "type": "Click"
         },
-        "post_delay": 15000,
+        "post_delay": 5000,
         "$__mpe_code": {
             "position": {
-                "x": 1399,
-                "y": -943
+                "x": 1360,
+                "y": -1050
             }
         }
     }
