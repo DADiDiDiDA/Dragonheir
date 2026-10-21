@@ -95,7 +95,7 @@
         },
         {
             "name": "🎫 领取游踪奖励",
-            "entry": "领取任务奖励开始_游踪奖励",
+            "entry": "领取任务奖励开始-游踪奖励",
             "default_check": true,
             "description": "领取游踪奖励"
         }
