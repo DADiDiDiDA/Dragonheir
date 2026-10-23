@@ -4,9 +4,9 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": -4484,
-                "y": -78,
-                "zoom": 0.57
+                "x": -5206,
+                "y": -92,
+                "zoom": 0.68
             },
             "filename": "开始工会签到",
             "version": "v2.1.0"
@@ -32,7 +32,7 @@
         }
     },
     "开始进入捐赠界面": {
-        "post_delay": 4000,
+        "post_delay": 2000,
         "next": [
             "进入捐赠界面",
             "[JumpBack]进入工会界面-第二次",
@@ -168,8 +168,8 @@
         "post_delay": 4000,
         "$__mpe_code": {
             "position": {
-                "x": 8612,
-                "y": 540
+                "x": 8600,
+                "y": 692
             }
         }
     }

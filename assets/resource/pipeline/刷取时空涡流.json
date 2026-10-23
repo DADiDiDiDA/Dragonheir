@@ -4,9 +4,9 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": -559,
-                "y": 603,
-                "zoom": 0.6
+                "x": -3639,
+                "y": 141,
+                "zoom": 0.68
             },
             "filename": "刷取时空涡流",
             "version": "v2.1.0"
@@ -90,8 +90,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 6475,
-                "y": 165
+                "x": 6482,
+                "y": 93
             }
         }
     },
@@ -139,12 +139,6 @@
         }
     },
     "开始等待画面无变化涡流": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "expected": ""
-            }
-        },
         "next": [
             "开始涡流奖励确认"
         ],
@@ -201,8 +195,7 @@
         },
         "post_delay": 2000,
         "next": [
-            "开始等待画面无变化涡流",
-            "[JumpBack]按Esc返回主界面开始"
+            "开始等待画面无变化涡流"
         ],
         "$__mpe_code": {
             "position": {
@@ -321,8 +314,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 5133,
-                "y": -10
+                "x": 5126,
+                "y": -47
             }
         }
     },
@@ -529,8 +522,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -340,
-                "y": -477
+                "x": -367,
+                "y": -467
             }
         }
     },

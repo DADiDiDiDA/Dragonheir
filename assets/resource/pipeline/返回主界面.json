@@ -4,9 +4,9 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": -3684,
-                "y": 126,
-                "zoom": 0.69
+                "x": -1674,
+                "y": 371,
+                "zoom": 0.39
             },
             "filename": "返回主界面",
             "version": "v2.1.0"
@@ -234,7 +234,8 @@
     },
     "启动龙息游戏开始": {
         "next": [
-            "启动龙息游戏"
+            "启动龙息游戏",
+            "不启动龙息游戏"
         ],
         "$__mpe_code": {
             "position": {
@@ -547,6 +548,20 @@
             "position": {
                 "x": 6700,
                 "y": 131
+            }
+        }
+    },
+    "不启动龙息游戏": {
+        "action": {
+            "type": "StartApp"
+        },
+        "next": [
+            "进入游戏开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4884,
+                "y": 1394
             }
         }
     }

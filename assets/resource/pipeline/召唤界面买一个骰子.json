@@ -3,23 +3,20 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1780497172701,
-            "isModifiedExternally": false,
-            "filePath": "D:\\Application\\Automate\\Dragonheir\\assets\\resource\\pipeline\\召唤界面买一个骰子.json",
             "savedViewport": {
-                "x": -2623,
-                "y": 96,
-                "zoom": 0.7
+                "x": -1242,
+                "y": 287,
+                "zoom": 0.39
             },
             "filename": "召唤界面买一个骰子",
-            "version": "v1.6.0"
+            "version": "v2.1.0"
         }
     },
     "$__mpe_external_按Esc返回主界面开始_召唤界面买一个骰子": {
         "$__mpe_code": {
             "position": {
-                "x": 5443,
-                "y": 197
+                "x": 6031,
+                "y": -127
             }
         }
     },
@@ -29,8 +26,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 4050,
-                "y": 98
+                "x": 3751,
+                "y": 135
             }
         }
     },
@@ -66,12 +63,12 @@
         "post_delay": 4000,
         "next": [
             "确认骰子购买",
-            "[JumpBack]按Esc返回主界面开始"
+            "[JumpBack]点击骰子购买_第二次"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 4762,
-                "y": -143
+                "x": 4717,
+                "y": -77
             }
         }
     },
@@ -99,8 +96,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 5106,
-                "y": -20
+                "x": 5279,
+                "y": -220
             }
         }
     },
@@ -125,12 +122,75 @@
         "post_delay": 3000,
         "next": [
             "点击骰子购买",
-            "按Esc返回主界面开始"
+            "[JumpBack]进入召唤界面_第二次"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 4370,
-                "y": 92
+                "x": 4150,
+                "y": 82
+            }
+        }
+    },
+    "进入召唤界面_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    680,
+                    4,
+                    593,
+                    71
+                ],
+                "template": [
+                    "召唤图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 3000,
+        "$__mpe_code": {
+            "position": {
+                "x": 4419,
+                "y": -241
+            }
+        }
+    },
+    "点击骰子购买_第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    465,
+                    5,
+                    734,
+                    60
+                ],
+                "template": [
+                    "骰子图标.png"
+                ],
+                "threshold": [
+                    0.85
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    131,
+                    0,
+                    0,
+                    0
+                ]
+            }
+        },
+        "post_delay": 4000,
+        "$__mpe_code": {
+            "position": {
+                "x": 4999,
+                "y": 118
             }
         }
     }
