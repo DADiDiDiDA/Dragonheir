@@ -555,6 +555,7 @@
         "action": {
             "type": "StartApp"
         },
+        "post_delay": 2000,
         "next": [
             "进入游戏开始"
         ],
