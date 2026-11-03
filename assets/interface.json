@@ -1,6 +1,7 @@
 {
     "interface_version": 2,
     "name": "Dragonheir",
+    "label": "龙息：神寂",
     "description": "龙息神寂自动化",
     "contact": "",
     "license": "MIT",
@@ -26,6 +27,9 @@
             "name": "🎮 启动游戏",
             "entry": "启动龙息游戏开始",
             "default_check": true,
+            "option": [
+                "选择是否启动游戏"
+            ],
             "description": "启动游戏并进入主界面",
             "label": "🎮 启动游戏",
             "doc": "自动完成「🎮 启动游戏」。"
@@ -128,6 +132,36 @@
         }
     ],
     "option": {
+        "选择是否启动游戏": {
+            "type": "select",
+            "label": "选择是否启动游戏",
+            "description": "选择进入游戏时是否自动启动游戏APP",
+            "default_case": "启动游戏",
+            "cases": [
+                {
+                    "name": "启动游戏",
+                    "label": "启动游戏",
+                    "pipeline_override": {
+                        "启动龙息游戏开始": {
+                            "next": [
+                                "启动龙息游戏"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "不启动游戏",
+                    "label": "不启动游戏（游戏已在后台）",
+                    "pipeline_override": {
+                        "启动龙息游戏开始": {
+                            "next": [
+                                "不启动龙息游戏"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
         "开始选择打什么关卡": {
             "type": "select",
             "label": "副本选择",
