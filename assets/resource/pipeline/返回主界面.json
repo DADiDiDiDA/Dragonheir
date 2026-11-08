@@ -3,13 +3,33 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1794105329531,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "D:\\Automate\\Git-Maawork\\Dragonheir\\assets\\resource\\pipeline\\返回主界面.json",
             "savedViewport": {
-                "x": -1674,
-                "y": 371,
-                "zoom": 0.39
+                "x": -1649,
+                "y": -422,
+                "zoom": 0.4
             },
             "filename": "返回主界面",
-            "version": "v2.1.0"
+            "version": "v2.1.1"
+        }
+    },
+    "不启动龙息游戏": {
+        "action": {
+            "type": "StartApp"
+        },
+        "anchor": "启动游戏一次",
+        "post_delay": 2000,
+        "next": [
+            "进入游戏开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4884,
+                "y": 1394
+            }
         }
     },
     "主界面检测-按Esc返回主界面": {
@@ -60,8 +80,16 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 6648,
-                "y": -511
+                "x": 6650,
+                "y": -545
+            }
+        }
+    },
+    "公告关闭结束": {
+        "$__mpe_code": {
+            "position": {
+                "x": 7105,
+                "y": 86
             }
         }
     },
@@ -125,6 +153,35 @@
             "position": {
                 "x": 6860,
                 "y": 1344
+            }
+        }
+    },
+    "关闭更新公告": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1205,
+                    5,
+                    70,
+                    60
+                ],
+                "template": [
+                    "关卡类型选择叉号.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "公告关闭结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6860,
+                "y": -199
             }
         }
     },
@@ -221,6 +278,7 @@
                 "package": "com.tencent.dragoncn/com.tencent.dragoncn.DragonPlayerActivity"
             }
         },
+        "anchor": "启动游戏一次",
         "post_delay": 2000,
         "next": [
             "进入游戏开始"
@@ -233,6 +291,7 @@
         }
     },
     "启动龙息游戏开始": {
+        "post_delay": 2000,
         "next": [
             "启动龙息游戏",
             "不启动龙息游戏"
@@ -293,7 +352,8 @@
             "[JumpBack]关卡内返回开始",
             "[JumpBack]有没有获得奖励界面",
             "[JumpBack]有没有可退出界面",
-            "[JumpBack]等待刷体力结束-检测"
+            "[JumpBack]等待刷体力结束-检测",
+            "[Anchor][JumpBack]启动游戏一次"
         ],
         "$__mpe_code": {
             "position": {
@@ -307,6 +367,32 @@
             "position": {
                 "x": 6983,
                 "y": -466
+            }
+        }
+    },
+    "是不是有更新公告": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    7,
+                    6,
+                    79,
+                    60
+                ],
+                "expected": [
+                    "公告"
+                ]
+            }
+        },
+        "next": [
+            "关闭更新公告",
+            "公告关闭结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6324,
+                "y": -144
             }
         }
     },
@@ -331,8 +417,8 @@
         "post_delay": 7000,
         "$__mpe_code": {
             "position": {
-                "x": 6350,
-                "y": 2061
+                "x": 6353,
+                "y": 2086
             }
         }
     },
@@ -383,8 +469,61 @@
         "post_delay": 7000,
         "$__mpe_code": {
             "position": {
-                "x": 6395,
-                "y": 1773
+                "x": 6392,
+                "y": 1828
+            }
+        }
+    },
+    "确认英雄召唤": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    986,
+                    631,
+                    107,
+                    52
+                ],
+                "expected": [
+                    "继续"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 6675,
+                "y": 158
+            }
+        }
+    },
+    "确认英雄召唤界面": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    112,
+                    81,
+                    107,
+                    58
+                ],
+                "expected": [
+                    "史诗",
+                    "传说",
+                    "普通"
+                ]
+            }
+        },
+        "next": [
+            "确认英雄召唤"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6381,
+                "y": 94
             }
         }
     },
@@ -435,134 +574,11 @@
             }
         }
     },
-    "是不是有更新公告": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    7,
-                    6,
-                    79,
-                    60
-                ],
-                "expected": [
-                    "公告"
-                ]
-            }
-        },
-        "next": [
-            "关闭更新公告",
-            "公告关闭结束"
-        ],
+    "$__mpe_anchor_启动游戏一次_返回主界面": {
         "$__mpe_code": {
             "position": {
-                "x": 6324,
-                "y": -144
-            }
-        }
-    },
-    "关闭更新公告": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    1205,
-                    5,
-                    70,
-                    60
-                ],
-                "template": [
-                    "关卡类型选择叉号.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
-        "next": [
-            "公告关闭结束"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 6729,
-                "y": -163
-            }
-        }
-    },
-    "公告关闭结束": {
-        "$__mpe_code": {
-            "position": {
-                "x": 7105,
-                "y": 86
-            }
-        }
-    },
-    "确认英雄召唤界面": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    112,
-                    81,
-                    107,
-                    58
-                ],
-                "expected": [
-                    "史诗",
-                    "传说",
-                    "普通"
-                ]
-            }
-        },
-        "next": [
-            "确认英雄召唤"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 6381,
-                "y": 94
-            }
-        }
-    },
-    "确认英雄召唤": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    986,
-                    631,
-                    107,
-                    52
-                ],
-                "expected": [
-                    "继续"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
-        "$__mpe_code": {
-            "position": {
-                "x": 6700,
-                "y": 131
-            }
-        }
-    },
-    "不启动龙息游戏": {
-        "action": {
-            "type": "StartApp"
-        },
-        "post_delay": 2000,
-        "next": [
-            "进入游戏开始"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 4884,
-                "y": 1394
+                "x": 6241,
+                "y": 2697
             }
         }
     }
