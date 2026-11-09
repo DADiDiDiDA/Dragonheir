@@ -282,7 +282,9 @@
                 "package": "com.tencent.dragoncn/com.tencent.dragoncn.DragonPlayerActivity"
             }
         },
-        "anchor": "启动游戏一次",
+        "anchor": {
+            "启动游戏一次": "启动龙息游戏单引用"
+        },
         "post_delay": 2000,
         "next": [
             "进入游戏开始"
@@ -291,6 +293,48 @@
             "position": {
                 "x": 4882,
                 "y": 1067
+            }
+        }
+    },
+    "启动龙息游戏单引用": {
+        "action": {
+            "type": "StartApp",
+            "param": {
+                "package": "com.tencent.dragoncn/com.tencent.dragoncn.DragonPlayerActivity"
+            }
+        },
+        "post_delay": 2000,
+        "next": [
+            "启动龙息游戏单引用-限流",
+            "启动龙息游戏单引用-清锚点"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5132,
+                "y": 1301
+            }
+        }
+    },
+    "启动龙息游戏单引用-限流": {
+        "recognition": {
+            "type": "DirectHit"
+        },
+        "max_hit": 3,
+        "$__mpe_code": {
+            "position": {
+                "x": 5382,
+                "y": 1535
+            }
+        }
+    },
+    "启动龙息游戏单引用-清锚点": {
+        "anchor": {
+            "启动游戏一次": ""
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 5632,
+                "y": 1769
             }
         }
     },
