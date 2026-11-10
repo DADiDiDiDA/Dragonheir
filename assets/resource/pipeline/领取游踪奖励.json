@@ -244,6 +244,7 @@
         }
     },
     "新赛季任务奖励展示-游踪奖励": {
+        "post_delay": 2000,
         "recognition": {
             "type": "OCR",
             "param": {
