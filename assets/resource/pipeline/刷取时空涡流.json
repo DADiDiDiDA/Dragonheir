@@ -350,6 +350,7 @@
         }
     },
     "点击挑战界面-涡流-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -558,6 +559,7 @@
         }
     },
     "进入时空涡流界面-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -584,6 +586,7 @@
         }
     },
     "进入刷体力界面-刷取时空涡流-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -610,6 +613,7 @@
         }
     },
     "确认前往时空涡流界面-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {

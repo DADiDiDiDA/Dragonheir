@@ -132,6 +132,7 @@
         }
     },
     "进入召唤界面_第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -158,6 +159,7 @@
         }
     },
     "点击骰子购买_第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {

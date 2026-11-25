@@ -64,6 +64,7 @@
         }
     },
     "主界面检测-按Esc返回主界面-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {

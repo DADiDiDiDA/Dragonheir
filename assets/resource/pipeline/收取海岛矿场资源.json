@@ -142,6 +142,7 @@
         }
     },
     "进入海岛界面-矿场-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
